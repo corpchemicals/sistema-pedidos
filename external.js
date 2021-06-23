@@ -1,2 +1,2 @@
-import alertName from "module.js";
+import alertName from "./module.js";
 alertName("marcebollin");
