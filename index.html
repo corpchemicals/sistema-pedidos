@@ -1,9 +1,74 @@
-<html>
-	<head>
-		<title>Chemicals Formato Pedidos</title>
-	</head>
-	<body>
-		<p>Esto es una prueba<p>
-    <script type="module" src="external.js"></script>
-	</body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/app_result.css">
+
+  <title>Formateador de Pedidos</title>
+</head>
+<body>
+  <header>
+      <img src="assets/chemicals-logo.png" alt="logo">
+      <div class="header__title-container">
+        <h1>Formateador de Pedidos</h1>
+        <h2>Corporación Chemicals</h2>
+      </div>
+  </header>
+  <main id="app-container">
+    <section id="input-data" class="main-inputs-container">
+      <section class="inputs__product-data">
+        <h3>Producto</h3>
+
+        <select class="input" id="input-type">
+          <option value="default">Seleccionar tipo...</option>
+        </select>
+  
+        <select class="input" id="input-subtype">
+          <option value="default">Seleccionar subtipo...</option>
+        </select>
+  
+        <input 
+          type="number" 
+          class="input" 
+          id="input-amount" 
+          placeholder="cantidad"
+          min="0"
+        />
+
+        <button type="button" id="button-addOrder" class="inputs-container__button">Agregar</button>
+      </section>
+
+      <section class="inputs__order-seller">
+        <h3>Vendedor</h3>
+
+        <select class="input" id="input-seller">
+          <option value="default">Seleccionar vendedor...</option>
+        </select>
+  
+        <textarea
+          id="client-description"
+          rows="5"
+          cols="33"
+          class="input"
+        ></textarea>
+  
+        <button type="button" id="button-addTotalOrder" class="inputs-container__button">Agregar Pedido</button>
+      </section>
+    </section>
+
+    
+    <section id="current-order-container" class="current_order"></section>
+	</main>
+  <footer>
+      <button type="button" id="button-endOrders" class="footer__end-button">Procesar Pedidos</button>
+  </footer>
+  <section id="app-result" class="app_result"></section>
+  <script type='module' src='index.js'></script>
+</body>
 </html>
