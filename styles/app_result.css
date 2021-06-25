@@ -23,6 +23,11 @@
   margin: 0 15px;
 }
 
+.disarmKits article:first-child {
+  padding-right: 20px;
+  border-right: 1px solid #000;
+}
+
 .disarmKits ul, .to_assemble ul{
   list-style: none;
 }

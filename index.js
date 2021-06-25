@@ -39,26 +39,37 @@ button_addTotalOrder.addEventListener('click', () => {
 const button_endOrders = document.querySelector('#button-endOrders')
 button_endOrders.addEventListener('click', () => {
   if(numOrder > 0) {
-    document.querySelector("header").style.display = "none";
-    document.querySelector("#app-container").style.display = "none";
-    document.querySelector("footer").style.display = "none";
-
-    //Actual date
-    const date = new Date()
-    const dateHTML = document.createElement("p")
-    dateHTML.className = "result-date"
-    dateHTML.innerHTML = `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}`
-    document.querySelector("#app-result").appendChild(dateHTML)
-    
-    const { unified, toAssemble } = unifyOrders(orders)
-    
-    const kits = unified['kit']
-    if(kits) printDisarmedKits(kits_data, kits)
-    
-    printToAssemble(products, toAssemble)
-    printOrders(products, orders)
-
-    setTimeout(window.print, 500)
+    swal({
+      title: "¿Deseas procesar los pedidos?",
+      text: "Una vez procesados no podrás realizar cambios",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    })
+    .then(confirm => {
+      if(confirm) {
+        document.querySelector("header").style.display = "none";
+        document.querySelector("#app-container").style.display = "none";
+        document.querySelector("footer").style.display = "none";
+  
+        //Actual date
+        const date = new Date()
+        const dateHTML = document.createElement("p")
+        dateHTML.className = "result-date"
+        dateHTML.innerHTML = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`
+        document.querySelector("#app-result").appendChild(dateHTML)
+        
+        const { unified, toAssemble } = unifyOrders(orders)
+        
+        const kits = unified['kit']
+        if(kits) printDisarmedKits(kits_data, kits)
+        
+        printToAssemble(products, toAssemble)
+        printOrders(products, orders)
+  
+        setTimeout(window.print, 500)
+      }
+    })
   }
 })
 
