@@ -58,7 +58,7 @@ const kits_data = {
       "Oring Delphi NBR": 4
     },
     "microfilters": {
-      "Microfiltro tipo Bosh": 4
+      "Microfiltro Tipo Bosh": 4
     }
   },
 
@@ -68,7 +68,7 @@ const kits_data = {
       "Oring Universal NBR": 8
     },
     "microfilters": {
-      "Microfiltro tipo Bosh": 4
+      "Microfiltro Tipo Bosh": 4
     }
   },
 
@@ -79,7 +79,7 @@ const kits_data = {
       "Oring Universal VITON": 4
     },
     "microfilters": {
-      "Microfiltro tipo Bosh": 4
+      "Microfiltro Tipo Bosh": 4
     }
   },
 
@@ -90,7 +90,7 @@ const kits_data = {
       "Oring Universal VITON": 6
     },
     "microfilters": {
-      "Microfiltro tipo Bosh": 6
+      "Microfiltro Tipo Bosh": 6
     }
   },
  
@@ -102,7 +102,7 @@ const kits_data = {
       "Oring Universal VITON": 8
     },
     "microfilters": {
-      "Microfiltro tipo Bosh": 8
+      "Microfiltro Tipo Bosh": 8
     }
   },
 
@@ -113,7 +113,7 @@ const kits_data = {
       "Oring Delphi NBR": 4
     },
     "microfilters": {
-      "Microfiltro tipo Bosh": 4
+      "Microfiltro Tipo Bosh": 4
     }
   },
 
@@ -144,7 +144,7 @@ const kits_data = {
       "Oring Delphi NBR": 8 
     },
     "microfilters": {
-      "Microfiltro tipo Bosh": 8
+      "Microfiltro Tipo Bosh": 8
     }
   },
 
@@ -155,7 +155,7 @@ const kits_data = {
       "Oring Universal NBR": 8 
     },
     "microfilters": {
-      "Microfiltro tipo Bosh": 8
+      "Microfiltro Tipo Bosh": 8
     }
   },
 
@@ -166,7 +166,7 @@ const kits_data = {
       "Oring Delphi VITON": 8 
     },
     "microfilters": {
-      "Microfiltro tipo Bosh": 8
+      "Microfiltro Tipo Bosh": 8
     }
   },
 
@@ -177,7 +177,7 @@ const kits_data = {
       "Asiento Asiatico NBR": 6 
     },
     "microfilters": {
-      "Microfiltro tipo Bosh": 6
+      "Microfiltro Tipo Bosh": 6
     }
   },
 
