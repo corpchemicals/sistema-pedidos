@@ -2,95 +2,95 @@ const kits_data = {
   "kit001": {
     "name": "Kit Inyección Asiático 4 CIL NBR/NBR",
     "orings": {
-      "Oring Asiatico NBR": 4,
-      "Asiento Asiatico NBR": 4
+      "(OINY001) Oring Asiatico NBR": 4,
+      "(OINY008) Asiento Asiatico NBR": 4
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 4
+      "(MIC001) Microfiltro Tipo Bosh": 4
     }
   },
 
   "kit002": {
     "name": "Kit Inyección Universal 6 CIL NBR/NBR",
     "orings": {
-      "Oring Universal NBR": 12
+      "(OINY003) Oring Universal NBR": 12
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 6
+      "(MIC001) Microfiltro Tipo Bosh": 6
     }
   },
 
   "kit003": {
     "name": "Kit Inyección Universal 8 CIL NBR/NBR",
     "orings": { 
-      "Oring Universal NBR": 16
+      "(OINY003) Oring Universal NBR": 16
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 8
+      "(MIC001) Microfiltro Tipo Bosh": 8
     }
   },
 
   "kit004": {
     "name": "Kit de Inyección CHEVY - AVEO 2011 en adelante NBR/NBR",
     "orings": { 
-      "Oring Universal NBR": 4,
-      "Oring Chevy NBR": 4
+      "(OINY003) Oring Universal NBR": 4,
+      "(OINY002) Oring Chevy NBR": 4
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 4
+      "(MIC001) Microfiltro Tipo Bosh": 4
     }
   },
 
   "kit005": {
     "name": "Kit de Inyección UNIVERSAL WEBBER (EUROPEO) 4 CILINDROS NBR/NBR",
     "orings": { 
-      "Oring Universal NBR": 8
+      "(OINY003) Oring Universal NBR": 8
     },
     "microfilters": {
-      "Microfiltro WEBBER": 4
+      "(MIC003) Microfiltro WEBBER": 4
     }
   },
 
   "kit006": {
     "name": "Kit de Inyección AVEO HASTA 2010 NBR/NBR",
     "orings": { 
-      "Oring Universal NBR": 4,
-      "Oring Delphi NBR": 4
+      "(OINY003) Oring Universal NBR": 4,
+      "(OINY006) Oring Delphi NBR": 4
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 4
+      "(MIC001) Microfiltro Tipo Bosh": 4
     }
   },
 
   "kit007": {
     "name": "Kit de Inyección UNIVERSAL 4 CILINDROS NBR/NBR",
     "orings": { 
-      "Oring Universal NBR": 8
+      "(OINY003) Oring Universal NBR": 8
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 4
+      "(MIC001) Microfiltro Tipo Bosh": 4
     }
   },
 
   "kit008": {
     "name": "Kit de Inyección UNIVERSAL 4 CILINDROS VITON/NBR",
     "orings": { 
-      "Oring Universal NBR": 4,
-      "Oring Universal VITON": 4
+      "(OINY003) Oring Universal NBR": 4,
+      "(OINY004) Oring Universal VITON": 4
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 4
+      "(MIC001) Microfiltro Tipo Bosh": 4
     }
   },
 
   "kit009": {
     "name": "Kit de Inyección UNIVERSAL 6 CILINDROS VITON/NBR",
     "orings": { 
-      "Oring Universal NBR": 6,
-      "Oring Universal VITON": 6
+      "(OINY003) Oring Universal NBR": 6,
+      "(OINY004) Oring Universal VITON": 6
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 6
+      "(MIC001) Microfiltro Tipo Bosh": 6
     }
   },
  
@@ -98,86 +98,86 @@ const kits_data = {
   "kit010": {
     "name": "Kit de Inyección UNIVERSAL 8 CILINDROS VITON/NBR",
     "orings": { 
-      "Oring Universal NBR": 8,
-      "Oring Universal VITON": 8
+      "(OINY003) Oring Universal NBR": 8,
+      "(OINY004) Oring Universal VITON": 8
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 8
+      "(MIC001) Microfiltro Tipo Bosh": 8
     }
   },
 
   "kit011": {
     "name": "Kit de Inyección AVEO HASTA 2010 VITON/NBR",
     "orings": { 
-      "Oring Universal VITON": 4,
-      "Oring Delphi NBR": 4
+      "(OINY004) Oring Universal VITON": 4,
+      "(OINY006) Oring Delphi NBR": 4
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 4
+      "(MIC001) Microfiltro Tipo Bosh": 4
     }
   },
 
   "kit012": {
     "name": "Kit de Inyección UNIVERSAL GENERICO (EUROPEO) 4 CILINDROS NBR/NBR",
     "orings": { 
-      "Oring Universal NBR": 8
+      "(OINY003) Oring Universal NBR": 8
     },
     "microfilters": {
-      "Microfiltro Universal Corto": 4
+      "(MIC002) Microfiltro Universal Corto": 4
     }
   },
 
   "kit013": {
     "name": "Kit de Inyección UNIVERSAL WEBBER (EUROPEO) 4 CILINDROS VITON/VITON",
     "orings": { 
-      "Oring Universal VITON": 8
+      "(OINY004) Oring Universal VITON": 8
     },
     "microfilters": {
-      "Microfiltro WEBBER": 4
+      "(MIC003) Microfiltro WEBBER": 4
     }
   },
 
   "kit014": {
     "name": "Kit de Inyección SILVERADO 8 CILINDRO NBR/NBR",
     "orings": { 
-      "Oring Chevy NBR": 8,
-      "Oring Delphi NBR": 8 
+      "(OINY002) Oring Chevy NBR": 8,
+      "(OINY006) Oring Delphi NBR": 8 
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 8
+      "(MIC001) Microfiltro Tipo Bosh": 8
     }
   },
 
   "kit015": {
     "name": "Kit de Inyección Silverado (Iny 11-12) 8 CILINDRO",
     "orings": { 
-      "Oring Chevy NBR": 8,
-      "Oring Universal NBR": 8 
+      "(OINY002) Oring Chevy NBR": 8,
+      "(OINY003) Oring Universal NBR": 8 
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 8
+      "(MIC001) Microfiltro Tipo Bosh": 8
     }
   },
 
   "kit016": {
     "name": "Kit de Inyección SILVERADO 8 CILINDRO VITON/NBR",
     "orings": { 
-      "Oring Chevy NBR": 8,
-      "Oring Delphi VITON": 8 
+      "(OINY002) Oring Chevy NBR": 8,
+      "(OINY007) Oring Delphi VITON": 8 
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 8
+      "(MIC001) Microfiltro Tipo Bosh": 8
     }
   },
 
   "kit017": {
     "name": "Kit de Inyección 6 CILINDRO ASIATICO NBR/NBR",
     "orings": { 
-      "Oring Asiatico NBR": 6,
-      "Asiento Asiatico NBR": 6 
+      "(OINY001) Oring Asiatico NBR": 6,
+      "(OINY008) Asiento Asiatico NBR": 6 
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 6
+      "(MIC001) Microfiltro Tipo Bosh": 6
     }
   },
 
@@ -225,34 +225,42 @@ const kits_data = {
   "kit022": {
     "name": "Kit Inyección Asiático 8 CIL NBR/NBR",
     "orings": {
-      "Oring Asiatico NBR": 8,
-      "Asiento Asiatico NBR": 8
+      "(OINY001) Oring Asiatico NBR": 8,
+      "(OINY008) Asiento Asiatico NBR": 8
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 8
+      "(MIC001) Microfiltro Tipo Bosh": 8
     }
   },
 
   "kit023": {
     "name": "Kit Inyección Chevy Aveo LT (53)",
     "orings": {
-      "Oring Chevy NBR": 4,
-      "Oring Delphi NBR": 4
+      "(OINY002) Oring Chevy NBR": 4,
+      "(OINY006) Oring Delphi NBR": 4
     },
     "microfilters": {
-      "Microfiltro Tipo Delphi": 4
+      "(MIC004) Microfiltro Tipo Delphi": 4
     }
   },
 
   "kit024": {
     "name": "Kit Inyección Asiático 6 CIL Modelo Nuevo",
     "orings": {
-      "Oring Universal NBR": 6,
-      "Asiento Asiatico NBR": 6
+      "(OINY003) Oring Universal NBR": 6,
+      "(OINY008) Asiento Asiatico NBR": 6
     },
     "microfilters": {
-      "Microfiltro Tipo Bosh": 6
+      "(MIC001) Microfiltro Tipo Bosh": 6
     }
+  },
+
+  "kitOTV004": {
+    "name": "Oring NBR Kit tapa Valvula Aveo LT",
+    "orings": {
+      "(OINY008) Asiento Asiatico NBR": 15,
+    },
+    "microfilters": {}
   }
 }
 

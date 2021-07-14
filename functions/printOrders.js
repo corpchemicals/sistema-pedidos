@@ -1,8 +1,3 @@
-function roundFourDecimal(n) {
-  const integer = Math.round(n*10000)
-  return(integer / 10000)
-}
-
 function printOrders(products, orders) {
   const orders_container = document.createElement('section')
   orders_container.className = "orders_container"
@@ -24,7 +19,7 @@ function printOrders(products, orders) {
         const total_price = price * amount
         order_price += total_price
         
-        list_elements += `<li>${code} --> ${name}: ${amount} unidades ${price}$</li>`
+        list_elements += `<li>${code} --> ${name}: ${amount} unidades ${total_price}$</li>`
       }
       orders_ulists += `<ul>${list_elements}</ul>`
     }
@@ -36,7 +31,7 @@ function printOrders(products, orders) {
       <p>${client}</p>
       <span>Vendedor: ${seller}</span>
       <article>${orders_ulists}</article>
-      <span>Precio Total: ${roundFourDecimal(order_price)}$</span>
+      <span>Precio Total: ${order_price.toFixed(4)}$</span>
     </div>
     `
 

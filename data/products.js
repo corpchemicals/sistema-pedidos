@@ -113,12 +113,17 @@ const products = {
     {
       "number": "023",
       "name": "Kit Chevy Aveo LT (53)",
-      "precio": 1.20
+      "price": 1.20
     },
     {
       "number": "024",
       "name": "Kit asiático 6 Cil. Modelo Nuevo",
-      "precio": 2.6
+      "price": 2.6
+    },
+    {
+      "number": "OTV004",
+      "name": "Kit Tapa Valvula Aveo LT",
+      "price": 3
     }
 	],
 	"mic": [
@@ -1721,6 +1726,11 @@ const products = {
 			"name": "Oring Refrigeración VERDE",
 			"price": 0.06
 		},
+    {
+      "number": "002",
+			"name": "Oring Refrigeración VERDE 5/16 N",
+			"price": 0.0528
+    },
 		{
 			"number": "003",
 			"name": "Oring Refrigeración VERDE",
@@ -1792,6 +1802,11 @@ const products = {
 			"number": "001",
 			"name": "Kit Refrigeración para",
 			"price": 4.13
+		},
+    {
+			"number": "002",
+			"name": "Kit Refrigeración para Compresor FX15FS10 Verde",
+			"price": 1.81
 		}
 	],
 	"ormm": [
@@ -1830,7 +1845,8 @@ const products = {
 			"number": "003",
 			"name": "Oring Viton Kit Tapa Valvula",
 			"price": 12.97
-		}
+		},
+
 	]
 }
 

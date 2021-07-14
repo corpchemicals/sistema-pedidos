@@ -41,7 +41,6 @@ function printDisarmedKits(products, kits) { //in params are kits
   }
 
   //HTML format
-  const body = document.querySelector("body")
   const container = document.createElement('section')
   //Administrative input Orings
   container.className = 'disarmKits'
