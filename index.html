@@ -26,52 +26,65 @@
       </div>
   </header>
   <main id="app-container">
-    <section id="input-data" class="main-inputs-container">
-      <section class="inputs__product-data">
-        <h3>Producto</h3>
-
-        <select class="input" id="input-type">
-          <option value="default">Seleccionar tipo...</option>
-        </select>
+    <section class="main-left-container">
+      <section id="input-data" class="main-inputs-container">
+        <section class="inputs__product-data">
+          <h3>Producto</h3>
   
-        <select class="input" id="input-subtype">
-          <option value="default">Seleccionar subtipo...</option>
-        </select>
-  
-        <input 
-          type="number" 
-          class="input" 
-          id="input-amount" 
-          placeholder="cantidad"
-          min="0"
-        />
-
-        <button type="button" id="button-addOrder" class="inputs-container__button">Agregar</button>
-      </section>
-
-      <section class="inputs__order-seller">
-        <h3>Vendedor</h3>
-
-        <select class="input" id="input-seller">
-          <option value="default">Seleccionar vendedor...</option>
-        </select>
-  
-        <textarea
-          id="client-description"
-          rows="5"
-          cols="33"
-          class="input"
-        ></textarea>
-  
-        <button type="button" id="button-addTotalOrder" class="inputs-container__button">Agregar Pedido</button>
-      </section>
-    </section>
-
+          <select class="input" id="input-type">
+            <option value="default">Seleccionar tipo...</option>
+          </select>
     
-    <section id="current-order-container" class="current_order"></section>
+          <select class="input" id="input-subtype">
+            <option value="default">Seleccionar subtipo...</option>
+          </select>
+    
+          <input 
+            type="number" 
+            class="input" 
+            id="input-amount" 
+            placeholder="cantidad"
+            min="0"
+          />
+  
+          <button type="button" id="button-addOrder" class="inputs-container__button">Agregar</button>
+        </section>
+  
+        <section class="inputs__order-seller">
+          <h3>Vendedor</h3>
+  
+          <select class="input" id="input-seller">
+            <option value="default">Seleccionar vendedor...</option>
+          </select>
+    
+          <textarea
+            id="client-description"
+            rows="5"
+            cols="33"
+            class="input"
+          ></textarea>
+    
+          <button type="button" id="button-addTotalOrder" class="inputs-container__button">Agregar Pedido</button>
+        </section>
+        
+        <button type="button" id="button-endOrders" class="end-button">Procesar</button>
+      </section>
+      
+      <section id="current-order-container" class="current_order"></section>
+    </section>
+   
+    <section class="main-code-list">
+      <h4>Selecciona un tipo de producto para utilizar el buscador</h4>
+      <div>
+        <input list="code-list" id="input-code-list" type="text" class="input">
+        <datalist id="code-list">
+        </datalist>
+      </div>
+      <h5 id="code-list-value"></h5>
+      <button id="code-list-cleaner" class="inputs-container__button">Limpiar</button>
+    </section>
 	</main>
   <footer>
-      <button type="button" id="button-endOrders" class="footer__end-button">Procesar Pedidos</button>
   </footer>
   <section id="app-result" class="app_result"></section>
 </body>

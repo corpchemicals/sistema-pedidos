@@ -7,8 +7,9 @@ function printOrders(products, orders) {
     let orders_ulists = ``
     let order_price = 0
 
+    let list_elements = ``
+
     for(const category in order) {
-      let list_elements = ``
       for(const product_key in order[category]) {
         const booleanN = (category.substring(0,2) === 'or' && (+category.charAt(2) || category.charAt(2) === '0'))
         const code = ((booleanN) ? product_key : category + product_key).toUpperCase()
@@ -19,20 +20,21 @@ function printOrders(products, orders) {
         const total_price = price * amount
         order_price += total_price
         
-        list_elements += `<li>${code} --> ${name}: ${amount} unidades ${total_price}$</li>`
+        list_elements += `<li>${code} --> ${name}: ${amount} unidades ${total_price.toFixed(2)}$</li>`
       }
-      orders_ulists += `<ul>${list_elements}</ul>`
     }
 
-    const container = document.createElement('div')
+    const container = document.createElement('article')
     container.className = 'order_container'
     container.innerHTML = `
-    <div>
-      <p>${client}</p>
-      <span>Vendedor: ${seller}</span>
-      <article>${orders_ulists}</article>
-      <span>Precio Total: ${order_price.toFixed(4)}$</span>
-    </div>
+      <p>----</p>
+      <ul>
+      <li>${client}</li>
+      <li>Vendedor: ${seller}</li>
+      ${list_elements}
+      <li>Precio Total: ${order_price.toFixed(2)}$</li>
+      </ul>
+      <p>----</p>
     `
 
     orders_container.appendChild(container);
