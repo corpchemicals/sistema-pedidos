@@ -55,22 +55,26 @@
 
 .orders_container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 5px;
   padding: 20px;
-  border-bottom: 2px solid #000;
   font-size: 1.3rem;
   max-width: 1200px;
 }
 
 .order_container {
-  margin: 8px;
-  padding: 8px;
-  border: 1px solid black;
   max-width: 400px;
+}
+
+
+/* Separators for page break */
+.order_container > p {
+  visibility: hidden;
 }
 
 .order_container ul {
   list-style: none;
-  margin: 3px 0;
+  border: 1px solid black;
+  padding: 8px;
 }

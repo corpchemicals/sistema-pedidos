@@ -1,6 +1,7 @@
 function setProductsOptions(products) {
   const input_type = document.querySelector('#input-type')
-  const input_subtype = document.querySelector('#input-subtype')
+  const subtype_datalist = document.querySelector('#subtype-datalist')
+  const datalist = document.querySelector('#code-list')
 
   //types
   for(const type in products) {
@@ -12,16 +13,20 @@ function setProductsOptions(products) {
   
   //subtypes
   input_type.addEventListener('change', () => {
-    while(input_subtype.lastChild.value !== 'default') { //default = seleccionar... 
-      input_subtype.removeChild(input_subtype.lastChild)
+    while(subtype_datalist.lastChild) { //default = seleccionar... 
+      subtype_datalist.removeChild(subtype_datalist.lastChild)
+      datalist.removeChild(datalist.lastChild)
     }
     
     if(input_type.value !== 'default') {
       for(const subtype of products[input_type.value]) {
         const sub_option = document.createElement('option')
-        sub_option.innerHTML = subtype.number
         sub_option.value = subtype.number
-        input_subtype.appendChild(sub_option)
+        subtype_datalist.appendChild(sub_option)
+
+        const datalist_option = document.createElement('option')
+        datalist_option.value = `${input_type.value.toUpperCase()}${subtype.number}: ${subtype.name}`
+        datalist.appendChild(datalist_option)
       }    
     }
   })

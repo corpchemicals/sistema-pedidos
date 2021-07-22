@@ -15,6 +15,16 @@ import products from './data/products.js'
 import sellers from './data/sellers.js'
 import kits_data from './data/kits-data.js'
 
+const code_list_value = document.querySelector("#code-list-value")
+document.querySelector("#input-code-list")
+  .addEventListener("change", ev => code_list_value.innerText = ev.target.value)
+
+document.querySelector("#code-list-cleaner").addEventListener("click", () => {
+  document.querySelector("#code-list-value").innerText = "";
+  document.querySelector("#input-code-list").value = "";
+})
+
+
 //Set all the options
 setProductsOptions(products)
 setSellersOptions(sellers)
