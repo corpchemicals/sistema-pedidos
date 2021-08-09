@@ -1,24 +1,17 @@
-/*
-products = [
-    {
-    category: "kit"
-    number: "001",
-    amount: 10,
-    name: 'Kit Asiatico NBR',
-    uPrice: 1.73},
-  ]
-*/
-class Order {
-  constructor(products, seller, client = "", note = "") {
-    this.products = products
-    this.seller = seller
-    this.client = client
-    this.note = note
+export default class Order {
+  constructor() {
+    this.products = []
   }
 
-  addProduct(product, container) {
+  clean() {
+    this.products = []
+  }
+
+  addProduct(product, print = false) {
+    //add product 
     const products = this.products
     const {category, number, amount} = product
+
     let index = products.findIndex(product => 
         (product.category === category) && (product.number === number))
     
@@ -29,74 +22,34 @@ class Order {
     } 
     else products[index].amount += amount
 
-    if(container) this.printProduct(index, container)
+    if(print) this.printProduct(index)
   }
 
   removeProduct(index) {
-    delete this.products[index]
+    debugger
+    this.products.splice(index, 1)
+    console.log(this.products)
   }
 
-  printProduct(index, container) {
+  printProduct(index) {
+    //print product in html
+    const container = document.querySelector("#current-order-list")
     const {category, number, amount} = this.products[index]
-    
-    const li = document.createElement("li")
-    const text = `${category.toUpperCase()}${number}: ${amount} unidades` 
-    li.innerText = text
+    const existing = [...container.childNodes].find(child => child.dataset.identifier === `${category}${number}`)
 
-    li.addEventListener("click", (ev) => { 
+    let li = document.createElement("li")
+    li.dataset.identifier = `${category}${number}`
+    
+    if(existing) li = existing 
+    
+    li.dataset.amount = amount
+    li.innerText = `${category.toUpperCase()}-${number}: ${li.dataset.amount} unidades` 
+
+    li.addEventListener('click', (ev) => { 
       container.removeChild(ev.target)
       this.removeProduct(index)
     })
 
     container.appendChild(li)
   }
-
-  hasKits() {
-    const hasAKit = this.products.find(product => product.category === "kit")
-    return (hasAKit) ? true : false
-  }
 }
-
-class OrderList {
-  constructor() {
-    this.list = []
-    this.unified = []
-  }
-
-  addOrder(Order) {
-    this.list.push(Order)
-    for(const product of Order.products) {
-      const {category, number, amount} = product
-      const index = this.unified.findIndex(
-        uProduct => uProduct.category === category && uProduct.number === number)
-      
-      if(index === -1) this.unified.push({...product, amount: `${amount}`})
-      else this.unified[index].amount += `-${amount}`
-    }
-  }
-}
-
-const order1 = new Order([
-  {
-  category: "kit",
-  number: "001",
-  amount: 10,
-  name: 'Kit Asiatico NBR',
-  uPrice: 1.73},
-], "Marcelo")
-
-const order2 = new Order([
-  {
-  category: "kit",
-  number: "002",
-  amount: 20,
-  name: 'Kit Asiatico NBR',
-  uPrice: 1.73},
-], "Marcelo")
-
-const list = new OrderList()
-
-list.addOrder(order1)
-list.addOrder(order2)
-
-list.unified

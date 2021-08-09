@@ -1,6 +1,5 @@
 const sellers = [
     "DIRECTO",
-    "NUEVO",
     "Ana M Diaz",
     "Carlos Bortot",
     "Maria Camargo",
