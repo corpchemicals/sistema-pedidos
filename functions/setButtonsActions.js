@@ -1,12 +1,10 @@
-import Order from "./Order.js";
 import validateEntryProduct from "./validateEntryProdut.js";
 
 //add product button listener
 export function setAddButton(products, order) {
   document.querySelector("button#add-product").addEventListener("click", () => {
-    debugger
     const selectors = document.querySelectorAll("select.iProduct")
-    if(!validateEntryProduct()) return console.log("implement sweet alert")
+    if(!validateEntryProduct()) return;
       
     const [category, from, to] = [...selectors].map(selector => selector.value)
     const amount = parseInt(document.querySelector("input#amount").value)
@@ -23,15 +21,39 @@ export function setAddButton(products, order) {
 export function setFinishButton(order, orders) {
   document.querySelector("button#finish-order")
     .addEventListener("click", () => {
-      orders.removeHTMLList()
-
       const orderInfo = document.querySelectorAll(".order_info")
       const [seller, client, note] = [...orderInfo].map(input => input.value.trim())
-      orders.addOrder(order, seller, client, note)
-      
-      order.clean()
-      console.log(order)
-      console.log(orders)
+      if(order.products.length > 0 && seller) {
+        orders.removeHTMLCurrentOrder()
+  
+        orders.addOrder({
+          order,
+          seller, client, note,
+          print: true
+        })
+        
+        order.clean()
+      }
+    })
+}
 
+export function setProcessButton(orders) {
+  document.querySelector("button#process-orders")
+    .addEventListener("click", () => {
+      if(orders.list.length > 0) {
+        swal({
+          title: "¿Deseas procesar los pedidos?",
+          text: "Se imprimirán dos archivos",
+          icon: "success",
+          buttons: true,
+        })
+        .then(confirm => {
+          if(confirm) {
+            document.querySelectorAll("textarea").forEach(textarea => textarea.value = "")
+
+            setTimeout(() => orders.process(), 200)
+          }
+        })
+      }
     })
 }

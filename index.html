@@ -1,91 +1,94 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Javascript -->
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script type='module' src='index.js'></script>
-  
-  <!-- Styles -->
-  <link rel="stylesheet" href="./styles/index.css">
-  <link rel="stylesheet" href="./styles/app_result.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formato de Pedidos</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <title>Formato de Pedidos</title>
+    <!-- css -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/print-styles.css" media="print">
+    
+    <!-- Js -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="index.js"></script>
 </head>
 <body>
-  <header>
-      <img src="assets/chemicals-logo.png" alt="logo">
-      <div class="header__title-container">
-        <h1>Formato de Pedidos</h1>
-        <h2>Corporación Chemicals</h2>
-      </div>
-  </header>
-  <main id="app-container">
-    <section class="main-left-container">
-      <section id="input-data" class="main-inputs-container">
-        <section class="inputs__product-data">
-          <h3>Producto</h3>
-  
-          <select class="input" id="input-type">
-            <option value="default">Seleccionar tipo...</option>
-          </select>
-    
-          <select class="input" id="input-subtype">
-            <option value="default">Seleccionar subtipo...</option>
-          </select>
-    
-          <input 
-            type="number" 
-            class="input" 
-            id="input-amount" 
-            placeholder="cantidad"
-            min="0"
-          />
-  
-          <button type="button" id="button-addOrder" class="inputs-container__button">Agregar</button>
-        </section>
-  
-        <section class="inputs__order-seller">
-          <h3>Vendedor</h3>
-  
-          <select class="input" id="input-seller">
-            <option value="default">Seleccionar vendedor...</option>
-          </select>
-    
-          <textarea
-            id="client-description"
-            rows="5"
-            cols="33"
-            class="input"
-          ></textarea>
-    
-          <button type="button" id="button-addTotalOrder" class="inputs-container__button">Agregar Pedido</button>
-        </section>
+    <main>
+        <section id="app">
+            <header>
+                <div class="header__company">
+                    <h1>Formato de Pedidos</h1>
+                    <h3>Corporación Chemicals</h3>
+                </div>
         
-        <button type="button" id="button-endOrders" class="end-button">Procesar</button>
-      </section>
-      
-      <section id="current-order-container" class="current_order"></section>
-    </section>
-   
-    <section class="main-code-list">
-      <h4>Selecciona un tipo de producto para utilizar el buscador</h4>
-      <div>
-        <input list="code-list" id="input-code-list" type="text" class="input">
-        <datalist id="code-list">
-        </datalist>
-      </div>
-      <h5 id="code-list-value"></h5>
-      <button id="code-list-cleaner" class="inputs-container__button">Limpiar</button>
-    </section>
-	</main>
-  <footer>
-  </footer>
-  <section id="app-result" class="app_result"></section>
+                <section class="header__inputs">
+                    <select id="category" class="iProduct" type="text" autocomplete="on">
+                        <option value>Escoja la categoría</option>
+                    </select>
+                    
+                    <div class="headers__inputs--from-to">
+                        <select id="from-number" class="iProduct" type="text" autocomplete="on">
+                            <option value>Desde...</option>
+                        </select>
+                    
+                        <select id="to-number" class="iProduct" type="text" autocomplete="on">
+                            <option value>Hasta...</option>
+                        </select>
+                    </div>
+            
+                    <input 
+                        id="amount" 
+                        type="number" 
+                        placeholder="Ingrese la cantidad"
+                        min="1"
+                        autocomplete="off"
+                    />
+        
+                    <button id="add-product">Ingresar</button>    
+                </section>
+            </header>
+            
+            <section class="app__order-data">
+                <h2>Datos del Pedido</h2>
+                <input list="sellers" id="seller" class="order_info" placeholder="Ingrese el vendedor">
+                    <datalist id="sellers"></datalist>
+                
+                <section class="order-data__text-areas">
+                    <textarea 
+                        id="client" 
+                        class="order_info"
+                        cols="30" 
+                        rows="5" 
+                        placeholder="Ingrese datos del cliente"></textarea>
+                    
+                    <textarea 
+                        id="note"
+                        class="order_info"
+                        cols="30"
+                        rows="5"
+                        placeholder="Ingrese una nota"></textarea>
+                
+                </section>
+                <button id="finish-order">Finalizar Pedido</button>
+            </section>
+        </section>
+        <section class="lists">
+            <div class="current-order">
+                <h2>Productos:</h2>
+                <ul id="current-order-list"></ul>
+            </div>
+            
+            <div class="orders-list">
+                <div class="orders-top-container">
+                    <h2>Pedidos:</h2>
+                    <button id="process-orders">Procesar</button>
+                </div>
+                <ul id="orders-list"></ul>
+            </div>
+        </section>
+    </main>
+    <section id="results"></section>
 </body>
 </html>
