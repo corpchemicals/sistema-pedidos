@@ -23,6 +23,7 @@ export default class OrderList {
     //Unifying orders into a single reference about a product
     for(const product of order.products) {
       const {category, number, amount} = product
+
       const index = this.unified.findIndex(
           uProduct => uProduct.category === category && uProduct.number === number)
       
@@ -59,9 +60,10 @@ export default class OrderList {
     const ul = document.createElement("ul")
 
     for(const product of products) {
-      let { category, number, amount } = product
+      let { amount, key} = product
+
       const li = document.createElement("li")
-      li.innerText = `${category.toUpperCase()}${number}: ${amount} unidades` 
+      li.innerText = `${key}: ${amount} unidades` 
       ul.appendChild(li)
     } 
     
@@ -147,10 +149,9 @@ export default class OrderList {
       let orderPrice = 0
 
       for(const product of products) {
-        const { name, amount, category, number, uPrice } = product
+        const { name, amount, uPrice, key } = product
         
         const shortedName = name.substr(0, 30) + "..."
-        const key = `${category.toUpperCase()}${number}` 
         
         const productPrice = amount * uPrice
         orderPrice += productPrice 
@@ -181,8 +182,9 @@ export default class OrderList {
 
     for(const product of unified) {
       const li = document.createElement("li")
-      const {name, number, category, amount} = product
-      const text = `${(category.toUpperCase() + number).bold()} | ${name}: ${amount.bold()}`
+      const {name, amount, key} = product
+
+      const text = `${key.bold()} | ${name}: ${amount.bold()}`
       li.innerHTML = text
       ol.appendChild(li)
     }

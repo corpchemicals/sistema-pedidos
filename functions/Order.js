@@ -19,6 +19,11 @@ export default class Order {
     const products = this.products
     const {category, number, amount} = product
     
+    //for delete previous category of number series like 000 100 200 300...
+    let key = `${category.toUpperCase()}${number}` 
+    if(category.startsWith('or') && !isNaN(+category.charAt(2))) key = `OR${number}`
+    product.key = key
+
     let index = products.findIndex(product => 
       (product.category === category) && (product.number === number))
       
@@ -42,7 +47,7 @@ export default class Order {
   printProduct(index) {
     //print product in html
     const container = document.querySelector("#current-order-list")
-    let {category, number, amount} = this.products[index]
+    let {category, number, amount, key} = this.products[index]
     const existing = [...container.childNodes].find(child => child.dataset.identifier === `${category}${number}`)
 
     let li = document.createElement("li")
@@ -51,7 +56,7 @@ export default class Order {
     if(existing) li = existing 
     
     li.dataset.amount = amount
-    li.innerText = `${category.toUpperCase()}${number}: ${li.dataset.amount} unidades` 
+    li.innerText = `${key}: ${li.dataset.amount} unidades` 
 
     li.addEventListener('click', (ev) => { 
       const liIndex = [...container.childNodes].findIndex(li => li === ev.target)
