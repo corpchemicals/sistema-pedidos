@@ -781,198 +781,32 @@ export default {
 		{
 			"number": "005",
 			"name": "Oring Bomba Gas - Peugeot",
-			"name": "Oring NBR Iny Universal",
 			"uPrice": 0.05
-		},
-		{
-			"number": "004",
-			"name": "Oring VITON Iny Universal",
-			"uPrice": 0.22
-		},
-		{
-			"number": "005",
-			"name": "Oring VITON Tapa Valvula",
-			"uPrice": 4.46
 		},
 		{
 			"number": "006",
-			"name": "Oring NBR Iny Delphi Aveo",
-			"uPrice": 0.05
+			"name": "Oring Bomba Gas - Peugeot",
+			"price": 2.44
 		},
 		{
-			"number": "016",
-			"name": "Oring NBR 016",
-			"uPrice": 0.06
+			"number": "007",
+			"name": "Oring Bomba Gas - Toyota 4",
+			"price": 2.64
 		},
 		{
-			"number": "017",
-			"name": "Oring NBR 017",
-			"uPrice": 0.06
+			"number": "008",
+			"name": "Oring Bomba Gas- Toyota",
+			"price": 2.44
 		},
 		{
-			"number": "018",
-			"name": "Oring NBR 018",
-			"uPrice": 0.07
+			"number": "009",
+			"name": "Oring Bomba Gas- Silverado",
+			"price": 2.44
 		},
 		{
-			"number": "019",
-			"name": "Oring NBR 019",
-			"uPrice": 0.08
-		},
-		{
-			"number": "020",
-			"name": "Oring NBR 020",
-			"uPrice": 0.08
-		},
-		{
-			"number": "021",
-			"name": "Oring NBR 021",
-			"uPrice": 0.09
-		},
-		{
-			"number": "022",
-			"name": "Oring NBR 022",
-			"uPrice": 0.10
-		},
-		{
-			"number": "023",
-			"name": "Oring NBR 023",
-			"uPrice": 0.10
-		},
-		{
-			"number": "024",
-			"name": "Oring NBR 024",
-			"uPrice": 0.11
-		},
-		{
-			"number": "025",
-			"name": "Oring NBR 025",
-			"uPrice": 0.12
-		},
-		{
-			"number": "026",
-			"name": "Oring NBR 026",
-			"uPrice": 0.12
-		},
-		{
-			"number": "027",
-			"name": "Oring NBR 027",
-			"uPrice": 0.13
-		},
-		{
-			"number": "028",
-			"name": "Oring NBR 028",
-			"uPrice": 0.15
-		},
-		{
-			"number": "029",
-			"name": "Oring NBR 029",
-			"uPrice": 0.16
-		},
-		{
-			"number": "030",
-			"name": "Oring NBR 030",
-			"uPrice": 0.16
-		},
-		{
-			"number": "031",
-			"name": "Oring NBR 031",
-			"uPrice": 0.21
-		},
-		{
-			"number": "032",
-			"name": "Oring NBR 032",
-			"uPrice": 0.23
-		},
-		{
-			"number": "033",
-			"name": "Oring NBR 033",
-			"uPrice": 0.24
-		},
-		{
-			"number": "034",
-			"name": "Oring NBR 034",
-			"uPrice": 0.26
-		},
-		{
-			"number": "035",
-			"name": "Oring NBR 035",
-			"uPrice": 0.29
-		},
-		{
-			"number": "036",
-			"name": "Oring NBR 036",
-			"uPrice": 0.36
-		},
-		{
-			"number": "037",
-			"name": "Oring NBR 037",
-			"uPrice": 0.35
-		},
-		{
-			"number": "038",
-			"name": "Oring NBR 038",
-			"uPrice": 0.36
-		},
-		{
-			"number": "039",
-			"name": "Oring NBR 039",
-			"uPrice": 0.38
-		},
-		{
-			"number": "040",
-			"name": "Oring NBR 040",
-			"uPrice": 0.42
-		},
-		{
-			"number": "041",
-			"name": "Oring NBR 041",
-			"uPrice": 0.49
-		},
-		{
-			"number": "042",
-			"name": "Oring NBR 042",
-			"uPrice": 0.58
-		},
-		{
-			"number": "043",
-			"name": "Oring NBR 043",
-			"uPrice": 0.60
-		},
-		{
-			"number": "044",
-			"name": "Oring NBR 044",
-			"uPrice": 0.60
-		},
-		{
-			"number": "045",
-			"name": "Oring NBR 045",
-			"uPrice": 0.66
-		},
-		{
-			"number": "046",
-			"name": "Oring NBR 046",
-			"uPrice": 0.68
-		},
-		{
-			"number": "047",
-			"name": "Oring NBR 047",
-			"uPrice": 0.69
-		},
-		{
-			"number": "048",
-			"name": "Oring NBR 048",
-			"uPrice": 0.85
-		},
-		{
-			"number": "049",
-			"name": "Oring NBR 049",
-			"uPrice": 0.87
-		},
-		{
-			"number": "050",
-			"name": "Oring NBR 050",
-			"uPrice": 0.90
+			"number": "010",
+			"name": "Oring Bomba Gas- Hilux",
+			"price": 2.58
 		}
 	],
 	"oct": [
@@ -1643,6 +1477,11 @@ export default {
 			"number": "202",
 			"name": "Oring NBR 202",
 			"uPrice": 0.08
+		},
+		{
+			"number": "203",
+			"name": "Oring NBR 202",
+			"uPrice": 0.06
 		},
 		{
 			"number": "204",

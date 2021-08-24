@@ -7,7 +7,7 @@ export function setProductsSelects(products) {
   function createOption(value, text = value) {
     const option = document.createElement("option")
     option.value = value 
-    option.innerText = text.toUpperCase()
+    option.innerText = text
     return option
   }
 
@@ -21,7 +21,7 @@ export function setProductsSelects(products) {
 
   //Append options for category selector
   for(const category in products) { 
-    const option = createOption(category)
+    const option = createOption(category, category.toUpperCase())
     selectCategory.appendChild(option)
   }
 
@@ -33,8 +33,8 @@ export function setProductsSelects(products) {
     
     const category = ev.target.value
     let index = 0
-    for(const { number } of products[category]) {
-      const option = createOption(index, number)
+    for(const { number, name} of products[category]) {
+      const option = createOption(index, `${number} --- ${name}`)
       selectFromNumber.appendChild(option)
       index++
     }
@@ -50,8 +50,8 @@ export function setProductsSelects(products) {
     const productsRemaining = products[category].slice(fromNumber)
 
     let index = fromNumber
-    for(const { number } of productsRemaining) {
-      const option = createOption(index, number)
+    for(const { number, name } of productsRemaining) {
+      const option = createOption(index, `${number} --- ${name}`)
       selectToNumber.appendChild(option)
       index++
     }
