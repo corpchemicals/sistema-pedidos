@@ -31,7 +31,6 @@ main {
 .orders-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  page-break-after: always;
 }
 
 .orders-section div {
