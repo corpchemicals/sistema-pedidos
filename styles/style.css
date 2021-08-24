@@ -320,7 +320,7 @@ header {
   }
 }
 
-@media(min-width: 1380px) {
+@media(min-width: 1280px) {
   main {
     flex-direction: row;
     align-items: flex-start;
