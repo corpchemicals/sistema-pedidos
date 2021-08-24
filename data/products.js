@@ -546,8 +546,173 @@ export default {
 				},
 			]
     },
-	],
+		{
+      "number": "025",
+      "name": "Kit Iny. Universal 4 Cil. VITON/VITON",
+      "uPrice": 2.55,
+			"content": [
+				{
+					"category": "oiny",
+					"number": "004",
+					"amount": 8
+				},
 
+				{
+					"category": "mic",
+					"number": "001",
+					"amount": 4
+				},
+			]
+    },
+		{
+      "number": "026",
+      "name": "Kit Iny. Asiático 4 Cil. NBR/VITON",
+      "uPrice": 1.97,
+			"content": [
+				{
+					"category": "oiny",
+					"number": "001",
+					"amount": 4
+				},
+
+				{
+					"category": "oiny",
+					"number": "010",
+					"amount": 4
+				},
+
+				{
+					"category": "mic",
+					"number": "001",
+					"amount": 4
+				},
+			]
+    },
+		{
+      "number": "027",
+      "name": "Kit Iny. Asiático 6 Cil. NBR/VITON",
+      "uPrice": 3.54,
+			"content": [
+				{
+					"category": "oiny",
+					"number": "001",
+					"amount": 6
+				},
+
+				{
+					"category": "oiny",
+					"number": "010",
+					"amount": 6
+				},
+
+				{
+					"category": "mic",
+					"number": "001",
+					"amount": 6
+				},
+			]
+    },
+		{
+      "number": "028",
+      "name": "Kit Iny. Universal Webber 4 Cil. NBR/VITON (EUROPEO)",
+      "uPrice": 1.88,
+			"content": [
+				{
+					"category": "oiny",
+					"number": "004",
+					"amount": 4
+				},
+
+				{
+					"category": "oiny",
+					"number": "003",
+					"amount": 4
+				},
+
+				{
+					"category": "mic",
+					"number": "003",
+					"amount": 4
+				},
+			]
+    },
+		{
+      "number": "029",
+      "name": "Kit Iny. TrailBlazer 6 Cil. NBR/VITON Motor 4.2",
+      "uPrice": 2.84,
+			"content": [
+				{
+					"category": "oiny",
+					"number": "003",
+					"amount": 6
+				},
+
+				{
+					"category": "oiny",
+					"number": "007",
+					"amount": 6
+				},
+
+				{
+					"category": "mic",
+					"number": "001",
+					"amount": 6
+				},
+			]
+    },
+	],
+	"oiny": [
+		{
+			"number": "001",
+			"name": "Oring NBR Iny Asiatico",
+			"price": 0.07
+		},
+		{
+			"number": "002",
+			"name": "Oring NBR Iny Chevy",
+			"price": 0.05
+		},
+		{
+			"number": "003",
+			"name": "Oring NBR Iny Universal",
+			"price": 0.05
+		},
+		{
+			"number": "004",
+			"name": "Oring VITON Iny Universal",
+			"price": 0.22
+		},
+		{
+			"number": "005",
+			"name": "Oring VITON Tapa Valvula",
+			"price": 4.46
+		},
+		{
+			"number": "006",
+			"name": "Oring NBR Iny Delphi Aveo",
+			"price": 0.05
+		},
+		{
+			"number": "007",
+			"name": "Oring Viton Iny Delphi Aveo",
+			"price": 0.20
+		},
+		{
+			"number": "008",
+			"name": "Oring NBR Asiento Asiatico",
+			"price": 0.19
+		},
+		{
+			"number": "009",
+			"name": "Oring VITON Iny Asiático",
+			"price": 0.25
+		},
+		{
+			"number": "010",
+			"name": "Oring VITON Asiento Asiático",
+			"price": 0.41
+		}
+	],
 	"mic": [
 		{
 			"number": "001",
@@ -808,6 +973,25 @@ export default {
 			"number": "050",
 			"name": "Oring NBR 050",
 			"uPrice": 0.90
+		}
+	],
+	"oct": [
+		{
+			"number": "001",
+			"name": "Oring NBR Copa de Tripoide",
+			"price": 0.63
+		}
+	],
+	"odt": [
+		{
+			"number": "001",
+			"name": "Oring NBR Distribuidor Tapa",
+			"price": 0.49
+		},
+		{
+			"number": "002",
+			"name": "Oring Viton Distribuidor tapa",
+			"price": 4.50
 		}
 	],
 	"or000": [
