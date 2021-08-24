@@ -3,6 +3,15 @@ import Order from "./functions/Order.js"
 import { setProductsSelects, setSellersSelect } from "./functions/setSelects.js"
 import {  setAddButton, setFinishButton, setProcessButton } from "./functions/setButtonsActions.js"
 
+
+//title for fullscreen
+function toggleFullscreen() {
+  if(!document.fullscreenElement) return document.documentElement.requestFullscreen()
+  document.exitFullscreen()
+}
+
+document.querySelector("h1").addEventListener("click", toggleFullscreen)
+
 //data
 import products from "./data/products.js"
 import sellers from "./data/sellers.js"
