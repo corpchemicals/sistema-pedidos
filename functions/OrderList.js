@@ -141,7 +141,7 @@ export default class OrderList {
       p.innerHTML = 
       `${"Vendedor".bold()}: ${seller}<br>${"Cliente".bold()}: ${client}<br>`
 
-      if(note) p.innerText += `${"Nota".bold()}: ${note}<br>`
+      if(note) p.innerHTML += `${"Nota".bold()}: ${note}<br>`
 
       div.appendChild(p)
       

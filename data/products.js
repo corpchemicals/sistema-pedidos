@@ -665,52 +665,52 @@ export default {
 		{
 			"number": "001",
 			"name": "Oring NBR Iny Asiatico",
-			"price": 0.07
+			"uPrice": 0.07
 		},
 		{
 			"number": "002",
 			"name": "Oring NBR Iny Chevy",
-			"price": 0.05
+			"uPrice": 0.05
 		},
 		{
 			"number": "003",
 			"name": "Oring NBR Iny Universal",
-			"price": 0.05
+			"uPrice": 0.05
 		},
 		{
 			"number": "004",
 			"name": "Oring VITON Iny Universal",
-			"price": 0.22
+			"uPrice": 0.22
 		},
 		{
 			"number": "005",
 			"name": "Oring VITON Tapa Valvula",
-			"price": 4.46
+			"uPrice": 4.46
 		},
 		{
 			"number": "006",
 			"name": "Oring NBR Iny Delphi Aveo",
-			"price": 0.05
+			"uPrice": 0.05
 		},
 		{
 			"number": "007",
 			"name": "Oring Viton Iny Delphi Aveo",
-			"price": 0.20
+			"uPrice": 0.20
 		},
 		{
 			"number": "008",
 			"name": "Oring NBR Asiento Asiatico",
-			"price": 0.19
+			"uPrice": 0.19
 		},
 		{
 			"number": "009",
 			"name": "Oring VITON Iny Asiático",
-			"price": 0.25
+			"uPrice": 0.25
 		},
 		{
 			"number": "010",
 			"name": "Oring VITON Asiento Asiático",
-			"price": 0.41
+			"uPrice": 0.41
 		}
 	],
 	"mic": [
@@ -786,46 +786,46 @@ export default {
 		{
 			"number": "006",
 			"name": "Oring Bomba Gas - Peugeot",
-			"price": 2.44
+			"uPrice": 2.44
 		},
 		{
 			"number": "007",
 			"name": "Oring Bomba Gas - Toyota 4",
-			"price": 2.64
+			"uPrice": 2.64
 		},
 		{
 			"number": "008",
 			"name": "Oring Bomba Gas- Toyota",
-			"price": 2.44
+			"uPrice": 2.44
 		},
 		{
 			"number": "009",
 			"name": "Oring Bomba Gas- Silverado",
-			"price": 2.44
+			"uPrice": 2.44
 		},
 		{
 			"number": "010",
 			"name": "Oring Bomba Gas- Hilux",
-			"price": 2.58
+			"uPrice": 2.58
 		}
 	],
 	"oct": [
 		{
 			"number": "001",
 			"name": "Oring NBR Copa de Tripoide",
-			"price": 0.63
+			"uPrice": 0.63
 		}
 	],
 	"odt": [
 		{
 			"number": "001",
 			"name": "Oring NBR Distribuidor Tapa",
-			"price": 0.49
+			"uPrice": 0.49
 		},
 		{
 			"number": "002",
 			"name": "Oring Viton Distribuidor tapa",
-			"price": 4.50
+			"uPrice": 4.50
 		}
 	],
 	"or000": [
