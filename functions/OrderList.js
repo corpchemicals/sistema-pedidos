@@ -96,7 +96,10 @@ export default class OrderList {
       }
     }
 
-    return [toIn, toOut]
+    const toOutOrdered = {}
+    Object.keys(toOut).sort().forEach(key => toOutOrdered[key] = toOut[key])
+
+    return [toIn, toOutOrdered]
   }
 
   makeKitSection(disarmedKits) {
@@ -105,10 +108,11 @@ export default class OrderList {
     let toggleColor = true
 
     for(const to of disarmedKits) {
-      const ol = document.createElement("ul")
+      const ol = document.createElement("ol")
       
       Object.entries(to).forEach(pair => {
         let [ name, amount ] = pair
+        //for or<number> series content like or000 or100
         if(name.startsWith("or")) name = name.slice(5)
 
         const span = document.createElement("span")
@@ -204,7 +208,12 @@ export default class OrderList {
     const dateText = `${date.getDate()}-${date.getMonth()+1}`
 
     const list = this.list
-    const unified = this.unified
+    const unified = this.unified.sort((a, b) => {
+      if(a.key > b.key) return 1
+      if(a.key < b.key) return -1
+
+      return 0
+    })
     
     const disarmedKits = this.getDisarmedKits(unified)
     
