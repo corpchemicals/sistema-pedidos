@@ -181,19 +181,31 @@ export default class OrderList {
   }
 
   makeAssembleSection(unified) {
-    const ol = document.createElement("ol")
-    ol.classList.add("assemble-list")
+    const section = document.createElement("section")
+    section.classList.add("assemble-list")
+    
+    const categories = _.uniq(unified.map(element => element.category))
+    const grouped = []
+    categories.forEach(category => grouped.push(unified.filter(product => product.category === category)))
+    
+    for(const group of grouped) {
+      const ol = document.createElement("ol")
+      const h2 = document.createElement("h2")
+      h2.innerText = group[0].category.toUpperCase()
+      ol.appendChild(h2)
+      group.forEach(product => {
+        const li = document.createElement("li")
+        const {name, amount, key} = product
+  
+        const text = `${key.bold()} | ${name}: ${amount.bold()}`
+        li.innerHTML = text
+        ol.appendChild(li)
+      })
 
-    for(const product of unified) {
-      const li = document.createElement("li")
-      const {name, amount, key} = product
-
-      const text = `${key.bold()} | ${name}: ${amount.bold()}`
-      li.innerHTML = text
-      ol.appendChild(li)
+      section.appendChild(ol)
     }
 
-    document.querySelector("#results").appendChild(ol)
+    document.querySelector("#results").appendChild(section)
   }
 
   cleanResults() {
