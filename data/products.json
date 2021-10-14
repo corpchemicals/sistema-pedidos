@@ -1,0 +1,2802 @@
+{
+    "kit": [
+        {
+            "number": "001",
+            "name": "Kit Iny. Asiático 4 CIL NBR/NBR",
+            "uPrice": 1.49,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "001",
+                    "amount": 4
+                },
+                {
+                    "category": "oiny",
+                    "number": "008",
+                    "amount": 4
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "002",
+            "name": "Kit Iny. Universal 6 Cil NBR/NBR",
+            "uPrice": 1.4,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 12
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 6
+                }
+            ]
+        },
+        {
+            "number": "003",
+            "name": "Kit Iny. Universal 8 Cil NBR/NBR",
+            "uPrice": 1.8,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 16
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 8
+                }
+            ]
+        },
+        {
+            "number": "004",
+            "name": "Kit Iny. Chevy - Aveo (2011 en adelante) NBR/NBR",
+            "uPrice": 0.88,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 4
+                },
+                {
+                    "category": "oiny",
+                    "number": "002",
+                    "amount": 4
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "005",
+            "name": "Kit Iny. Universal Webber (Europeo) 4 CILINDROS NBR/NBR",
+            "uPrice": 1.2,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 8
+                },
+                {
+                    "category": "mic",
+                    "number": "003",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "006",
+            "name": "Kit Iny. Aveo (hasta 2010) NBR/NBR",
+            "uPrice": 0.88,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 4
+                },
+                {
+                    "category": "oiny",
+                    "number": "006",
+                    "amount": 4
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "007",
+            "name": "Kit Iny. Universal 4 Cil NBR/NBR",
+            "uPrice": 1.65,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 8
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "008",
+            "name": "Kit Iny. Universal 4 Cil VITON/NBR",
+            "uPrice": 2.45,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 4
+                },
+                {
+                    "category": "oiny",
+                    "number": "004",
+                    "amount": 4
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "009",
+            "name": "Kit Iny. Universal 6 Cil VITON/NBR",
+            "uPrice": 2.45,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 6
+                },
+                {
+                    "category": "oiny",
+                    "number": "004",
+                    "amount": 6
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 6
+                }
+            ]
+        },
+        {
+            "number": "010",
+            "name": "Kit Iny. Universal 8 Cil VITON/NBR",
+            "uPrice": 3.23,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 8
+                },
+                {
+                    "category": "oiny",
+                    "number": "004",
+                    "amount": 8
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 8
+                }
+            ]
+        },
+        {
+            "number": "011",
+            "name": "Kit Iny. Aveo (hasta 2010) VITON/NBR",
+            "uPrice": 1.65,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "004",
+                    "amount": 4
+                },
+                {
+                    "category": "oiny",
+                    "number": "006",
+                    "amount": 4
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "012",
+            "name": "Kit Iny. Universal Genérico (Europeo) 4 Cil NBR/NBR",
+            "uPrice": 1.2,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 8
+                },
+                {
+                    "category": "mic",
+                    "number": "002",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "013",
+            "name": "Kit Iny. Universal Webber (Europeo) 4 CILINDROS VITON/NBR",
+            "uPrice": 2.27,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "004",
+                    "amount": 8
+                },
+                {
+                    "category": "mic",
+                    "number": "003",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "014",
+            "name": "Kit Iny. Silverado 8 Cil NBR/NBR",
+            "uPrice": 1.65,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "002",
+                    "amount": 8
+                },
+                {
+                    "category": "oiny",
+                    "number": "006",
+                    "amount": 8
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "015",
+            "name": "Kit Iny. Silverado (Iny 11-12) 8 Cil",
+            "uPrice": 1.65,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "002",
+                    "amount": 8
+                },
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 8
+                },
+                {
+                    "category": "oiny",
+                    "number": "001",
+                    "amount": 8
+                }
+            ]
+        },
+        {
+            "number": "016",
+            "name": "Kit Iny. Silverado 8 Cil VITON/NBR",
+            "uPrice": 3.08,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "002",
+                    "amount": 8
+                },
+                {
+                    "category": "oiny",
+                    "number": "007",
+                    "amount": 8
+                },
+                {
+                    "category": "oiny",
+                    "number": "001",
+                    "amount": 8
+                }
+            ]
+        },
+        {
+            "number": "017",
+            "name": "Kit Iny. Asiático 6 Cil NBR/NBR",
+            "uPrice": 2.24,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "001",
+                    "amount": 6
+                },
+                {
+                    "category": "oiny",
+                    "number": "008",
+                    "amount": 6
+                },
+                {
+                    "category": "oiny",
+                    "number": "001",
+                    "amount": 6
+                }
+            ]
+        },
+        {
+            "number": "018",
+            "name": "Kit Oring y Estopera para distribuidor Toyota Corolla VITON",
+            "uPrice": 8,
+            "content": []
+        },
+        {
+            "number": "019",
+            "name": "Kit para Compresor V5 NBR/NBR",
+            "uPrice": 2.83,
+            "content": [
+                {
+                    "category": "or100",
+                    "number": "157",
+                    "amount": 2
+                },
+                {
+                    "category": "or100",
+                    "number": "118",
+                    "amount": 2
+                },
+                {
+                    "category": "or200",
+                    "number": "211",
+                    "amount": 2
+                }
+            ]
+        },
+        {
+            "number": "020",
+            "name": "Kit para Compresor FS10-FX15 NBR/NBR",
+            "uPrice": 1.34,
+            "content": [
+                {
+                    "category": "or100",
+                    "number": "155",
+                    "amount": 1
+                },
+                {
+                    "category": "or200",
+                    "number": "211",
+                    "amount": 2
+                }
+            ]
+        },
+        {
+            "number": "021",
+            "name": "Kit Refrigeracion Automotriz NBR/NBR (80 pzas)",
+            "uPrice": 5.5,
+            "content": [
+                {
+                    "category": "or000",
+                    "number": "005",
+                    "amount": 10
+                },
+                {
+                    "category": "or000",
+                    "number": "006",
+                    "amount": 10
+                },
+                {
+                    "category": "or000",
+                    "number": "008",
+                    "amount": 10
+                },
+                {
+                    "category": "or000",
+                    "number": "011",
+                    "amount": 10
+                },
+                {
+                    "category": "or000",
+                    "number": "015",
+                    "amount": 10
+                },
+                {
+                    "category": "or100",
+                    "number": "108",
+                    "amount": 10
+                },
+                {
+                    "category": "or100",
+                    "number": "110",
+                    "amount": 10
+                },
+                {
+                    "category": "or200",
+                    "number": "205",
+                    "amount": 10
+                }
+            ]
+        },
+        {
+            "number": "022",
+            "name": "Kit Iny. Asiático 8 Cil NBR/NBR",
+            "uPrice": 3,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "001",
+                    "amount": 8
+                },
+                {
+                    "category": "oiny",
+                    "number": "008",
+                    "amount": 8
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 8
+                }
+            ]
+        },
+        {
+            "number": "023",
+            "name": "Kit Iny. Chevy Aveo LT (53)",
+            "uPrice": 1.2,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "002",
+                    "amount": 4
+                },
+                {
+                    "category": "oiny",
+                    "number": "006",
+                    "amount": 4
+                },
+                {
+                    "category": "mic",
+                    "number": "004",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "024",
+            "name": "Kit Iny. Asiático 6 Cil Modelo Nuevo",
+            "uPrice": 2.2,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 6
+                },
+                {
+                    "category": "oiny",
+                    "number": "008",
+                    "amount": 6
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 6
+                }
+            ]
+        },
+        {
+            "number": "025",
+            "name": "Kit Iny. Universal 4 Cil. VITON/VITON",
+            "uPrice": 2.55,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "004",
+                    "amount": 8
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "026",
+            "name": "Kit Iny. Asiático 4 Cil. NBR/VITON",
+            "uPrice": 1.97,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "001",
+                    "amount": 4
+                },
+                {
+                    "category": "oiny",
+                    "number": "010",
+                    "amount": 4
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "027",
+            "name": "Kit Iny. Asiático 6 Cil. NBR/VITON",
+            "uPrice": 3.54,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "001",
+                    "amount": 6
+                },
+                {
+                    "category": "oiny",
+                    "number": "010",
+                    "amount": 6
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 6
+                }
+            ]
+        },
+        {
+            "number": "028",
+            "name": "Kit Iny. Universal Webber 4 Cil. NBR/VITON (EUROPEO)",
+            "uPrice": 1.88,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "004",
+                    "amount": 4
+                },
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 4
+                },
+                {
+                    "category": "mic",
+                    "number": "003",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "number": "029",
+            "name": "Kit Iny. TrailBlazer 6 Cil. NBR/VITON Motor 4.2",
+            "uPrice": 2.84,
+            "content": [
+                {
+                    "category": "oiny",
+                    "number": "003",
+                    "amount": 6
+                },
+                {
+                    "category": "oiny",
+                    "number": "007",
+                    "amount": 6
+                },
+                {
+                    "category": "mic",
+                    "number": "001",
+                    "amount": 6
+                }
+            ]
+        }
+    ],
+    "oiny": [
+        {
+            "number": "001",
+            "name": "Oring NBR Iny Asiatico",
+            "uPrice": 0.07
+        },
+        {
+            "number": "002",
+            "name": "Oring NBR Iny Chevy",
+            "uPrice": 0.05
+        },
+        {
+            "number": "003",
+            "name": "Oring NBR Iny Universal",
+            "uPrice": 0.05
+        },
+        {
+            "number": "004",
+            "name": "Oring VITON Iny Universal",
+            "uPrice": 0.22
+        },
+        {
+            "number": "005",
+            "name": "Oring VITON Tapa Valvula",
+            "uPrice": 4.46
+        },
+        {
+            "number": "006",
+            "name": "Oring NBR Iny Delphi Aveo",
+            "uPrice": 0.05
+        },
+        {
+            "number": "007",
+            "name": "Oring Viton Iny Delphi Aveo",
+            "uPrice": 0.2
+        },
+        {
+            "number": "008",
+            "name": "Oring NBR Asiento Asiatico",
+            "uPrice": 0.19
+        },
+        {
+            "number": "009",
+            "name": "Oring VITON Iny Asiático",
+            "uPrice": 0.25
+        },
+        {
+            "number": "010",
+            "name": "Oring VITON Asiento Asiático",
+            "uPrice": 0.41
+        }
+    ],
+    "mic": [
+        {
+            "number": "001",
+            "name": "Microfiltro Universal Largo tipo",
+            "uPrice": 0.09
+        },
+        {
+            "number": "002",
+            "name": "Micro Filtro Universal corto tipo",
+            "uPrice": 0.14
+        },
+        {
+            "number": "003",
+            "name": "Micro Filtro Webber tipo Fiat",
+            "uPrice": 0.18
+        },
+        {
+            "number": "004",
+            "name": "Micro Filtro Delphi",
+            "uPrice": 0.18
+        }
+    ],
+    "oba": [
+        {
+            "number": "001",
+            "name": "Oring NBR Bomba de Agua",
+            "uPrice": 0.83
+        },
+        {
+            "number": "002",
+            "name": "Oring NBR para Bomba de",
+            "uPrice": 0.41
+        },
+        {
+            "number": "003",
+            "name": "Oring NBR Bomba de Agua",
+            "uPrice": 0.87
+        },
+        {
+            "number": "004",
+            "name": "Oring NBR Bomba de Agua",
+            "uPrice": 0.26
+        }
+    ],
+    "obg": [
+        {
+            "number": "001",
+            "name": "Oring Bomba Gas Aveo Optra",
+            "uPrice": 1.38
+        },
+        {
+            "number": "002",
+            "name": "Oring Bomba Gas Renault:",
+            "uPrice": 1.74
+        },
+        {
+            "number": "003",
+            "name": "Oring Bomba Gas -Corsa",
+            "uPrice": 2.1
+        },
+        {
+            "number": "004",
+            "name": "Oring Bomba Gas - Ford FX",
+            "uPrice": 2.1
+        },
+        {
+            "number": "005",
+            "name": "Oring Bomba Gas - Peugeot",
+            "uPrice": 0.05
+        },
+        {
+            "number": "006",
+            "name": "Oring Bomba Gas - Peugeot",
+            "uPrice": 2.44
+        },
+        {
+            "number": "007",
+            "name": "Oring Bomba Gas - Toyota 4",
+            "uPrice": 2.64
+        },
+        {
+            "number": "008",
+            "name": "Oring Bomba Gas- Toyota",
+            "uPrice": 2.44
+        },
+        {
+            "number": "009",
+            "name": "Oring Bomba Gas- Silverado",
+            "uPrice": 2.44
+        },
+        {
+            "number": "010",
+            "name": "Oring Bomba Gas- Hilux",
+            "uPrice": 2.58
+        }
+    ],
+    "oct": [
+        {
+            "number": "001",
+            "name": "Oring NBR Copa de Tripoide",
+            "uPrice": 0.63
+        }
+    ],
+    "odt": [
+        {
+            "number": "001",
+            "name": "Oring NBR Distribuidor Tapa",
+            "uPrice": 0.49
+        },
+        {
+            "number": "002",
+            "name": "Oring Viton Distribuidor tapa",
+            "uPrice": 4.5
+        }
+    ],
+    "or000": [
+        {
+            "number": "001",
+            "name": "Oring NBR 001",
+            "uPrice": 0.0386
+        },
+        {
+            "number": "002",
+            "name": "Oring NBR 002",
+            "uPrice": 0.0386
+        },
+        {
+            "number": "003",
+            "name": "Oring NBR 003",
+            "uPrice": 0.0386
+        },
+        {
+            "number": "004",
+            "name": "Oring NBR 004",
+            "uPrice": 0.0386
+        },
+        {
+            "number": "005",
+            "name": "Oring NBR 005",
+            "uPrice": 0.0386
+        },
+        {
+            "number": "006",
+            "name": "Oring NBR 006",
+            "uPrice": 0.0319
+        },
+        {
+            "number": "007",
+            "name": "Oring NBR 007",
+            "uPrice": 0.0319
+        },
+        {
+            "number": "008",
+            "name": "Oring NBR 008",
+            "uPrice": 0.0319
+        },
+        {
+            "number": "009",
+            "name": "Oring NBR 009",
+            "uPrice": 0.0319
+        },
+        {
+            "number": "010",
+            "name": "Oring NBR 010",
+            "uPrice": 0.0319
+        },
+        {
+            "number": "011",
+            "name": "Oring NBR 011",
+            "uPrice": 0.0353
+        },
+        {
+            "number": "012",
+            "name": "Oring NBR 012",
+            "uPrice": 0.0375
+        },
+        {
+            "number": "013",
+            "name": "Oring NBR 013",
+            "uPrice": 0.042
+        },
+        {
+            "number": "014",
+            "name": "Oring NBR 014",
+            "uPrice": 0.0454
+        },
+        {
+            "number": "015",
+            "name": "Oring NBR 015",
+            "uPrice": 0.0521
+        },
+        {
+            "number": "016",
+            "name": "Oring NBR 016",
+            "uPrice": 0.0588
+        },
+        {
+            "number": "017",
+            "name": "Oring NBR 017",
+            "uPrice": 0.0639
+        },
+        {
+            "number": "018",
+            "name": "Oring NBR 018",
+            "uPrice": 0.0689
+        },
+        {
+            "number": "019",
+            "name": "Oring NBR 019",
+            "uPrice": 0.0756
+        },
+        {
+            "number": "020",
+            "name": "Oring NBR 020",
+            "uPrice": 0.0818
+        },
+        {
+            "number": "021",
+            "name": "Oring NBR 021",
+            "uPrice": 0.0924
+        },
+        {
+            "number": "022",
+            "name": "Oring NBR 022",
+            "uPrice": 0.0975
+        },
+        {
+            "number": "023",
+            "name": "Oring NBR 023",
+            "uPrice": 0.1042
+        },
+        {
+            "number": "024",
+            "name": "Oring NBR 024",
+            "uPrice": 0.1126
+        },
+        {
+            "number": "025",
+            "name": "Oring NBR 025",
+            "uPrice": 0.1227
+        },
+        {
+            "number": "026",
+            "name": "Oring NBR 026",
+            "uPrice": 0.1244
+        },
+        {
+            "number": "027",
+            "name": "Oring NBR 027",
+            "uPrice": 0.1328
+        },
+        {
+            "number": "028",
+            "name": "Oring NBR 028",
+            "uPrice": 0.1462
+        },
+        {
+            "number": "029",
+            "name": "Oring NBR 029",
+            "uPrice": 0.1597
+        },
+        {
+            "number": "030",
+            "name": "Oring NBR 030",
+            "uPrice": 0.1647
+        },
+        {
+            "number": "031",
+            "name": "Oring NBR 031",
+            "uPrice": 0.2152
+        },
+        {
+            "number": "032",
+            "name": "Oring NBR 032",
+            "uPrice": 0.2303
+        },
+        {
+            "number": "033",
+            "name": "Oring NBR 033",
+            "uPrice": 0.2387
+        },
+        {
+            "number": "034",
+            "name": "Oring NBR 034",
+            "uPrice": 0.2555
+        },
+        {
+            "number": "035",
+            "name": "Oring NBR 035",
+            "uPrice": 0.2908
+        },
+        {
+            "number": "036",
+            "name": "Oring NBR 036",
+            "uPrice": 0.3586
+        },
+        {
+            "number": "037",
+            "name": "Oring NBR 037",
+            "uPrice": 0.353
+        },
+        {
+            "number": "038",
+            "name": "Oring NBR 038",
+            "uPrice": 0.3642
+        },
+        {
+            "number": "039",
+            "name": "Oring NBR 039",
+            "uPrice": 0.381
+        },
+        {
+            "number": "040",
+            "name": "Oring NBR 040",
+            "uPrice": 0.4202
+        },
+        {
+            "number": "041",
+            "name": "Oring NBR 041",
+            "uPrice": 0.4875
+        },
+        {
+            "number": "042",
+            "name": "Oring NBR 042",
+            "uPrice": 0.5771
+        },
+        {
+            "number": "043",
+            "name": "Oring NBR 043",
+            "uPrice": 0.5995
+        },
+        {
+            "number": "044",
+            "name": "Oring NBR 044",
+            "uPrice": 0.6219
+        },
+        {
+            "number": "045",
+            "name": "Oring NBR 045",
+            "uPrice": 0.6612
+        },
+        {
+            "number": "046",
+            "name": "Oring NBR 046",
+            "uPrice": 0.678
+        },
+        {
+            "number": "047",
+            "name": "Oring NBR 047",
+            "uPrice": 0.6948
+        },
+        {
+            "number": "048",
+            "name": "Oring NBR 048",
+            "uPrice": 0.8461
+        },
+        {
+            "number": "049",
+            "name": "Oring NBR 049",
+            "uPrice": 0.8741
+        },
+        {
+            "number": "050",
+            "name": "Oring NBR 050",
+            "uPrice": 0.8965
+        }
+    ],
+    "or100": [
+        {
+            "number": "102",
+            "name": "Oring NBR 102",
+            "uPrice": 0.037
+        },
+        {
+            "number": "103",
+            "name": "Oring NBR 103",
+            "uPrice": 0.037
+        },
+        {
+            "number": "104",
+            "name": "Oring NBR 104",
+            "uPrice": 0.037
+        },
+        {
+            "number": "105",
+            "name": "Oring NBR 105",
+            "uPrice": 0.0387
+        },
+        {
+            "number": "106",
+            "name": "Oring NBR 106",
+            "uPrice": 0.042
+        },
+        {
+            "number": "107",
+            "name": "Oring NBR 107",
+            "uPrice": 0.0454
+        },
+        {
+            "number": "108",
+            "name": "Oring NBR 108",
+            "uPrice": 0.0487
+        },
+        {
+            "number": "109",
+            "name": "Oring NBR 109",
+            "uPrice": 0.0555
+        },
+        {
+            "number": "110",
+            "name": "Oring NBR 110",
+            "uPrice": 0.0758
+        },
+        {
+            "number": "111",
+            "name": "Oring NBR 111",
+            "uPrice": 0.0706
+        },
+        {
+            "number": "112",
+            "name": "Oring NBR 112",
+            "uPrice": 0.0773
+        },
+        {
+            "number": "113",
+            "name": "Oring NBR 113",
+            "uPrice": 0.0874
+        },
+        {
+            "number": "114",
+            "name": "Oring NBR 114",
+            "uPrice": 0.0941
+        },
+        {
+            "number": "115",
+            "name": "Oring NBR 115",
+            "uPrice": 0.1042
+        },
+        {
+            "number": "116",
+            "name": "Oring NBR 116",
+            "uPrice": 0.1177
+        },
+        {
+            "number": "117",
+            "name": "Oring NBR 117",
+            "uPrice": 0.1244
+        },
+        {
+            "number": "118",
+            "name": "Oring NBR 118",
+            "uPrice": 0.1362
+        },
+        {
+            "number": "119",
+            "name": "Oring NBR 119",
+            "uPrice": 0.1485
+        },
+        {
+            "number": "120",
+            "name": "Oring NBR 120",
+            "uPrice": 0.1513
+        },
+        {
+            "number": "121",
+            "name": "Oring NBR 121",
+            "uPrice": 0.158
+        },
+        {
+            "number": "122",
+            "name": "Oring NBR 122",
+            "uPrice": 0.1737
+        },
+        {
+            "number": "123",
+            "name": "Oring NBR 123",
+            "uPrice": 0.1815
+        },
+        {
+            "number": "124",
+            "name": "Oring NBR 124",
+            "uPrice": 0.1883
+        },
+        {
+            "number": "125",
+            "name": "Oring NBR 125",
+            "uPrice": 0.2084
+        },
+        {
+            "number": "126",
+            "name": "Oring NBR 126",
+            "uPrice": 0.2297
+        },
+        {
+            "number": "127",
+            "name": "Oring NBR 127",
+            "uPrice": 0.2387
+        },
+        {
+            "number": "128",
+            "name": "Oring NBR 128",
+            "uPrice": 0.2471
+        },
+        {
+            "number": "129",
+            "name": "Oring NBR 129",
+            "uPrice": 0.2555
+        },
+        {
+            "number": "130",
+            "name": "Oring NBR 130",
+            "uPrice": 0.2858
+        },
+        {
+            "number": "131",
+            "name": "Oring NBR 131",
+            "uPrice": 0.2942
+        },
+        {
+            "number": "132",
+            "name": "Oring NBR 132",
+            "uPrice": 0.3059
+        },
+        {
+            "number": "133",
+            "name": "Oring NBR 133",
+            "uPrice": 0.3156
+        },
+        {
+            "number": "134",
+            "name": "Oring NBR 134",
+            "uPrice": 0.3311
+        },
+        {
+            "number": "135",
+            "name": "Oring NBR 135",
+            "uPrice": 0.3479
+        },
+        {
+            "number": "136",
+            "name": "Oring NBR 136",
+            "uPrice": 0.3631
+        },
+        {
+            "number": "137",
+            "name": "Oring NBR 137",
+            "uPrice": 0.3748
+        },
+        {
+            "number": "138",
+            "name": "Oring NBR 138",
+            "uPrice": 0.3978
+        },
+        {
+            "number": "139",
+            "name": "Oring NBR 139",
+            "uPrice": 0.4017
+        },
+        {
+            "number": "140",
+            "name": "Oring NBR 140",
+            "uPrice": 0.4101
+        },
+        {
+            "number": "141",
+            "name": "Oring NBR 141",
+            "uPrice": 0.4219
+        },
+        {
+            "number": "142",
+            "name": "Oring NBR 142",
+            "uPrice": 0.4421
+        },
+        {
+            "number": "143",
+            "name": "Oring NBR 143",
+            "uPrice": 0.4589
+        },
+        {
+            "number": "144",
+            "name": "Oring NBR 144",
+            "uPrice": 0.4707
+        },
+        {
+            "number": "145",
+            "name": "Oring NBR 145",
+            "uPrice": 0.4925
+        },
+        {
+            "number": "146",
+            "name": "Oring NBR 146",
+            "uPrice": 0.5155
+        },
+        {
+            "number": "147",
+            "name": "Oring NBR 147",
+            "uPrice": 0.5211
+        },
+        {
+            "number": "148",
+            "name": "Oring NBR 148",
+            "uPrice": 0.5547
+        },
+        {
+            "number": "149",
+            "name": "Oring NBR 149",
+            "uPrice": 0.5603
+        },
+        {
+            "number": "150",
+            "name": "Oring NBR 150",
+            "uPrice": 0.6275
+        },
+        {
+            "number": "151",
+            "name": "Oring NBR 151",
+            "uPrice": 0.6331
+        },
+        {
+            "number": "152",
+            "name": "Oring NBR 152",
+            "uPrice": 0.7004
+        },
+        {
+            "number": "153",
+            "name": "Oring NBR 153",
+            "uPrice": 0.7564
+        },
+        {
+            "number": "154",
+            "name": "Oring NBR 154",
+            "uPrice": 0.7956
+        },
+        {
+            "number": "155",
+            "name": "Oring NBR 155",
+            "uPrice": 0.8573
+        },
+        {
+            "number": "156",
+            "name": "Oring NBR 156",
+            "uPrice": 0.8965
+        },
+        {
+            "number": "157",
+            "name": "Oring NBR 157",
+            "uPrice": 0.9693
+        },
+        {
+            "number": "158",
+            "name": "Oring NBR 158",
+            "uPrice": 1.0029
+        },
+        {
+            "number": "159",
+            "name": "Oring NBR 159",
+            "uPrice": 1.031
+        },
+        {
+            "number": "160",
+            "name": "Oring NBR 160",
+            "uPrice": 1.059
+        },
+        {
+            "number": "161",
+            "name": "Oring NBR 161",
+            "uPrice": 1.0514
+        },
+        {
+            "number": "162",
+            "name": "Oring NBR 162",
+            "uPrice": 1.0811
+        },
+        {
+            "number": "163",
+            "name": "Oring NBR 163",
+            "uPrice": 1.3104
+        },
+        {
+            "number": "164",
+            "name": "Oring NBR 164",
+            "uPrice": 1.3244
+        },
+        {
+            "number": "165",
+            "name": "Oring NBR 165",
+            "uPrice": 1.3728
+        },
+        {
+            "number": "166",
+            "name": "Oring NBR 166",
+            "uPrice": 1.4789
+        },
+        {
+            "number": "167",
+            "name": "Oring NBR 167",
+            "uPrice": 1.5413
+        },
+        {
+            "number": "168",
+            "name": "Oring NBR 168",
+            "uPrice": 1.5694
+        },
+        {
+            "number": "169",
+            "name": "Oring NBR 169",
+            "uPrice": 1.6302
+        },
+        {
+            "number": "170",
+            "name": "Oring NBR 170",
+            "uPrice": 2.1528
+        },
+        {
+            "number": "171",
+            "name": "Oring NBR 171",
+            "uPrice": 2.2144
+        },
+        {
+            "number": "172",
+            "name": "Oring NBR 172",
+            "uPrice": 2.3291
+        },
+        {
+            "number": "173",
+            "name": "Oring NBR 173",
+            "uPrice": 2.3884
+        },
+        {
+            "number": "174",
+            "name": "Oring NBR 174",
+            "uPrice": 2.418
+        },
+        {
+            "number": "175",
+            "name": "Oring NBR 175",
+            "uPrice": 2.4476
+        },
+        {
+            "number": "176",
+            "name": "Oring NBR 176",
+            "uPrice": 2.4457
+        },
+        {
+            "number": "177",
+            "name": "Oring NBR 177",
+            "uPrice": 2.5584
+        },
+        {
+            "number": "178",
+            "name": "Oring NBR 178",
+            "uPrice": 2.6236
+        }
+    ],
+    "or200": [
+        {
+            "number": "201",
+            "name": "Oring NBR 201",
+            "uPrice": 0.0688
+        },
+        {
+            "number": "202",
+            "name": "Oring NBR 202",
+            "uPrice": 0.084
+        },
+        {
+            "number": "203",
+            "name": "Oring universal NBR",
+            "uPrice": 0.053
+        },
+        {
+            "number": "204",
+            "name": "Oring NBR 204",
+            "uPrice": 0.1044
+        },
+        {
+            "number": "205",
+            "name": "Oring NBR 205",
+            "uPrice": 0.1173
+        },
+        {
+            "number": "206",
+            "name": "Oring NBR 206",
+            "uPrice": 0.1326
+        },
+        {
+            "number": "207",
+            "name": "Oring NBR 207",
+            "uPrice": 0.1451
+        },
+        {
+            "number": "208",
+            "name": "Oring NBR 208",
+            "uPrice": 0.1622
+        },
+        {
+            "number": "209",
+            "name": "Oring NBR 209",
+            "uPrice": 0.1747
+        },
+        {
+            "number": "210",
+            "name": "Oring NBR 210",
+            "uPrice": 0.1753
+        },
+        {
+            "number": "211",
+            "name": "Oring NBR 211",
+            "uPrice": 0.1872
+        },
+        {
+            "number": "212",
+            "name": "Oring NBR 212",
+            "uPrice": 0.1981
+        },
+        {
+            "number": "213",
+            "name": "Oring NBR 213",
+            "uPrice": 0.2106
+        },
+        {
+            "number": "214",
+            "name": "Oring NBR 214",
+            "uPrice": 0.2278
+        },
+        {
+            "number": "215",
+            "name": "Oring NBR 215",
+            "uPrice": 0.2402
+        },
+        {
+            "number": "216",
+            "name": "Oring NBR 216",
+            "uPrice": 0.248
+        },
+        {
+            "number": "217",
+            "name": "Oring NBR 217",
+            "uPrice": 0.2575
+        },
+        {
+            "number": "218",
+            "name": "Oring NBR 218",
+            "uPrice": 0.2748
+        },
+        {
+            "number": "219",
+            "name": "Oring NBR 219",
+            "uPrice": 0.3052
+        },
+        {
+            "number": "220",
+            "name": "Oring NBR 220",
+            "uPrice": 0.3186
+        },
+        {
+            "number": "221",
+            "name": "Oring NBR 221",
+            "uPrice": 0.3404
+        },
+        {
+            "number": "222",
+            "name": "Oring NBR 222",
+            "uPrice": 0.3522
+        },
+        {
+            "number": "223",
+            "name": "Oring NBR 223",
+            "uPrice": 0.3857
+        },
+        {
+            "number": "224",
+            "name": "Oring NBR 224",
+            "uPrice": 0.431
+        },
+        {
+            "number": "225",
+            "name": "Oring NBR 225",
+            "uPrice": 0.4555
+        },
+        {
+            "number": "226",
+            "name": "Oring NBR 226",
+            "uPrice": 0.4852
+        },
+        {
+            "number": "227",
+            "name": "Oring NBR 227",
+            "uPrice": 0.5148
+        },
+        {
+            "number": "228",
+            "name": "Oring NBR 228",
+            "uPrice": 0.5382
+        },
+        {
+            "number": "229",
+            "name": "Oring NBR 229",
+            "uPrice": 0.5912
+        },
+        {
+            "number": "230",
+            "name": "Oring NBR 230",
+            "uPrice": 0.6131
+        },
+        {
+            "number": "231",
+            "name": "Oring NBR 231",
+            "uPrice": 0.6334
+        },
+        {
+            "number": "232",
+            "name": "Oring NBR 232",
+            "uPrice": 0.6755
+        },
+        {
+            "number": "233",
+            "name": "Oring NBR 233",
+            "uPrice": 0.7114
+        },
+        {
+            "number": "234",
+            "name": "Oring NBR 234",
+            "uPrice": 0.7691
+        },
+        {
+            "number": "235",
+            "name": "Oring NBR 235",
+            "uPrice": 0.8305
+        },
+        {
+            "number": "236",
+            "name": "Oring NBR 236",
+            "uPrice": 0.8518
+        },
+        {
+            "number": "237",
+            "name": "Oring NBR 237",
+            "uPrice": 0.8681
+        },
+        {
+            "number": "238",
+            "name": "Oring NBR 238",
+            "uPrice": 0.8979
+        },
+        {
+            "number": "239",
+            "name": "Oring NBR 239",
+            "uPrice": 0.9579
+        },
+        {
+            "number": "240",
+            "name": "Oring NBR 240",
+            "uPrice": 1.0074
+        },
+        {
+            "number": "241",
+            "name": "Oring NBR 241",
+            "uPrice": 1.0427
+        },
+        {
+            "number": "242",
+            "name": "Oring NBR 242",
+            "uPrice": 1.0582
+        },
+        {
+            "number": "243",
+            "name": "Oring NBR 243",
+            "uPrice": 1.1085
+        },
+        {
+            "number": "244",
+            "name": "Oring NBR 244",
+            "uPrice": 1.1387
+        },
+        {
+            "number": "245",
+            "name": "Oring NBR 245",
+            "uPrice": 1.2418
+        },
+        {
+            "number": "246",
+            "name": "Oring NBR 246",
+            "uPrice": 1.0456
+        },
+        {
+            "number": "247",
+            "name": "Oring NBR 247",
+            "uPrice": 1.0633
+        },
+        {
+            "number": "248",
+            "name": "Oring NBR 248",
+            "uPrice": 1.0852
+        },
+        {
+            "number": "249",
+            "name": "Oring NBR 249",
+            "uPrice": 1.1111
+        },
+        {
+            "number": "250",
+            "name": "Oring NBR 250",
+            "uPrice": 1.133
+        },
+        {
+            "number": "251",
+            "name": "Oring NBR 251",
+            "uPrice": 1.1521
+        },
+        {
+            "number": "252",
+            "name": "Oring NBR 252",
+            "uPrice": 1.1698
+        },
+        {
+            "number": "253",
+            "name": "Oring NBR 253",
+            "uPrice": 1.1876
+        },
+        {
+            "number": "254",
+            "name": "Oring NBR 254",
+            "uPrice": 1.2108
+        },
+        {
+            "number": "255",
+            "name": "Oring NBR 255",
+            "uPrice": 1.2285
+        },
+        {
+            "number": "256",
+            "name": "Oring NBR 256",
+            "uPrice": 1.2531
+        },
+        {
+            "number": "257",
+            "name": "Oring NBR 257",
+            "uPrice": 1.335
+        },
+        {
+            "number": "258",
+            "name": "Oring NBR 258",
+            "uPrice": 1.5602
+        },
+        {
+            "number": "259",
+            "name": "Oring MBR 259",
+            "uPrice": 1.5984
+        },
+        {
+            "number": "260",
+            "name": "Oring NBR 260",
+            "uPrice": 1.6503
+        },
+        {
+            "number": "261",
+            "name": "Oring NBR 261",
+            "uPrice": 1.6899
+        },
+        {
+            "number": "262",
+            "name": "Oring NBR 262",
+            "uPrice": 1.7226
+        },
+        {
+            "number": "263",
+            "name": "Oring NBR 263",
+            "uPrice": 1.7677
+        },
+        {
+            "number": "264",
+            "name": "Oring NBR 264",
+            "uPrice": 1.81
+        },
+        {
+            "number": "265",
+            "name": "Oring NBR 265",
+            "uPrice": 2.4597
+        }
+    ],
+    "or300": [
+        {
+            "number": "309",
+            "name": "Oring NBR 309",
+            "uPrice": 0.2527
+        },
+        {
+            "number": "310",
+            "name": "Oring NBR 310",
+            "uPrice": 0.2777
+        },
+        {
+            "number": "311",
+            "name": "Oring NBR 311",
+            "uPrice": 0.2948
+        },
+        {
+            "number": "312",
+            "name": "Oring NBR 312",
+            "uPrice": 0.3182
+        },
+        {
+            "number": "313",
+            "name": "Oring NBR 313",
+            "uPrice": 0.3448
+        },
+        {
+            "number": "314",
+            "name": "Oring NBR 314",
+            "uPrice": 0.3666
+        },
+        {
+            "number": "315",
+            "name": "Oring NBR 315",
+            "uPrice": 0.3869
+        },
+        {
+            "number": "316",
+            "name": "Oring NBR 316",
+            "uPrice": 0.4103
+        },
+        {
+            "number": "317",
+            "name": "Oring NBR 317",
+            "uPrice": 0.4306
+        },
+        {
+            "number": "318",
+            "name": "Oring NBR 318",
+            "uPrice": 0.4614
+        },
+        {
+            "number": "319",
+            "name": "Oring NBR 319",
+            "uPrice": 0.4742
+        },
+        {
+            "number": "320",
+            "name": "Oring NBR 320",
+            "uPrice": 0.5108
+        },
+        {
+            "number": "321",
+            "name": "Oring NBR 321",
+            "uPrice": 0.5378
+        },
+        {
+            "number": "322",
+            "name": "Oring NBR 322",
+            "uPrice": 0.5507
+        },
+        {
+            "number": "323",
+            "name": "Oring NBR 323",
+            "uPrice": 0.5824
+        },
+        {
+            "number": "324",
+            "name": "Oring NBR 324",
+            "uPrice": 0.6224
+        },
+        {
+            "number": "325",
+            "name": "Oring NBR 325",
+            "uPrice": 0.6755
+        },
+        {
+            "number": "326",
+            "name": "Oring NBR 326",
+            "uPrice": 0.7301
+        },
+        {
+            "number": "327",
+            "name": "Oring NBR 327",
+            "uPrice": 0.7738
+        },
+        {
+            "number": "328",
+            "name": "Oring NBR 328",
+            "uPrice": 0.8159
+        },
+        {
+            "number": "329",
+            "name": "Oring NBR 329",
+            "uPrice": 0.9095
+        },
+        {
+            "number": "330",
+            "name": "Oring NBR 330",
+            "uPrice": 0.9578
+        },
+        {
+            "number": "331",
+            "name": "Oring NBR 331",
+            "uPrice": 1.0401
+        },
+        {
+            "number": "332",
+            "name": "Oring NBR 332",
+            "uPrice": 1.0844
+        },
+        {
+            "number": "333",
+            "name": "Oring NBR 333",
+            "uPrice": 1.1484
+        },
+        {
+            "number": "334",
+            "name": "Oring NBR 334",
+            "uPrice": 1.1935
+        },
+        {
+            "number": "335",
+            "name": "Oring NBR 335",
+            "uPrice": 1.2369
+        },
+        {
+            "number": "336",
+            "name": "Oring NBR 336",
+            "uPrice": 1.3237
+        },
+        {
+            "number": "337",
+            "name": "Oring NBR 337",
+            "uPrice": 1.3687
+        },
+        {
+            "number": "338",
+            "name": "Oring NBR 338",
+            "uPrice": 1.4138
+        },
+        {
+            "number": "339",
+            "name": "Oring NBR 339",
+            "uPrice": 1.4606
+        },
+        {
+            "number": "340",
+            "name": "Oring NBR 340",
+            "uPrice": 1.5757
+        },
+        {
+            "number": "341",
+            "name": "Oring NBR 341",
+            "uPrice": 1.6308
+        },
+        {
+            "number": "342",
+            "name": "Oring NBR 342",
+            "uPrice": 1.6742
+        },
+        {
+            "number": "343",
+            "name": "Oring NBR 343",
+            "uPrice": 1.7209
+        },
+        {
+            "number": "344",
+            "name": "Oring NBR 344",
+            "uPrice": 1.7677
+        },
+        {
+            "number": "345",
+            "name": "Oring NBR 345",
+            "uPrice": 1.8144
+        },
+        {
+            "number": "346",
+            "name": "Oring NBR 346",
+            "uPrice": 1.8762
+        },
+        {
+            "number": "347",
+            "name": "Oring NBR 347",
+            "uPrice": 1.9246
+        },
+        {
+            "number": "348",
+            "name": "Oring NBR 348",
+            "uPrice": 1.3829
+        },
+        {
+            "number": "349",
+            "name": "Oring NBR 349",
+            "uPrice": 2.0214
+        },
+        {
+            "number": "350",
+            "name": "Oring NBR 350",
+            "uPrice": 2.0473
+        },
+        {
+            "number": "351",
+            "name": "Oring NBR 351",
+            "uPrice": 1.9781
+        },
+        {
+            "number": "352",
+            "name": "Oring NBR 352",
+            "uPrice": 1.736
+        },
+        {
+            "number": "353",
+            "name": "Oring NBR 353",
+            "uPrice": 2.0704
+        },
+        {
+            "number": "354",
+            "name": "Oring NBR 354",
+            "uPrice": 2.2214
+        },
+        {
+            "number": "355",
+            "name": "Oring NBR 355",
+            "uPrice": 2.2651
+        },
+        {
+            "number": "356",
+            "name": "Oring NBR 356",
+            "uPrice": 2.3088
+        },
+        {
+            "number": "357",
+            "name": "Oring NBR 357",
+            "uPrice": 2.104
+        },
+        {
+            "number": "358",
+            "name": "Oring NBR 358",
+            "uPrice": 2.1013
+        },
+        {
+            "number": "359",
+            "name": "Oring NBR 359",
+            "uPrice": 2.2833
+        },
+        {
+            "number": "360",
+            "name": "Oring NBR 360",
+            "uPrice": 2.5416
+        },
+        {
+            "number": "361",
+            "name": "Oring NBR 361",
+            "uPrice": 2.6039
+        },
+        {
+            "number": "362",
+            "name": "Oring NBR 362",
+            "uPrice": 2.6883
+        },
+        {
+            "number": "363",
+            "name": "Oring NBR 363",
+            "uPrice": 2.7743
+        },
+        {
+            "number": "364",
+            "name": "Oring NBR 364",
+            "uPrice": 2.8914
+        },
+        {
+            "number": "365",
+            "name": "Oring NBR 365",
+            "uPrice": 2.9862
+        },
+        {
+            "number": "366",
+            "name": "Oring NBR 366",
+            "uPrice": 3.2011
+        },
+        {
+            "number": "367",
+            "name": "Oring NBR 367",
+            "uPrice": 3.5879
+        },
+        {
+            "number": "368",
+            "name": "Oring NBR 368",
+            "uPrice": 3.6917
+        },
+        {
+            "number": "369",
+            "name": "Oring NBR 369",
+            "uPrice": 3.9332
+        },
+        {
+            "number": "370",
+            "name": "Oring NBR 370",
+            "uPrice": 4.157
+        }
+    ],
+    "or400": [
+        {
+            "number": "425",
+            "name": "Oring NBR 425",
+            "uPrice": 2.6367
+        },
+        {
+            "number": "426",
+            "name": "Oring NBR 426",
+            "uPrice": 2.8375
+        },
+        {
+            "number": "427",
+            "name": "Oring NBR 427",
+            "uPrice": 2.9372
+        },
+        {
+            "number": "428",
+            "name": "Oring NBR 428",
+            "uPrice": 2.9877
+        },
+        {
+            "number": "429",
+            "name": "Oring NBR 429",
+            "uPrice": 3.0649
+        },
+        {
+            "number": "430",
+            "name": "Oring NBR 430",
+            "uPrice": 3.1281
+        },
+        {
+            "number": "431",
+            "name": "Oring NBR 431",
+            "uPrice": 3.1913
+        },
+        {
+            "number": "432",
+            "name": "Oring NBR 432",
+            "uPrice": 3.2587
+        },
+        {
+            "number": "433",
+            "name": "Oring NBR 433",
+            "uPrice": 3.3205
+        },
+        {
+            "number": "434",
+            "name": "Oring NBR 434",
+            "uPrice": 3.385
+        },
+        {
+            "number": "435",
+            "name": "Oring NBR 435",
+            "uPrice": 3.4889
+        },
+        {
+            "number": "436",
+            "name": "Oring NBR 436",
+            "uPrice": 3.8161
+        },
+        {
+            "number": "437",
+            "name": "Oring NBR 437",
+            "uPrice": 3.7866
+        },
+        {
+            "number": "438",
+            "name": "Oring NBR 438",
+            "uPrice": 3.9172
+        },
+        {
+            "number": "439",
+            "name": "Oring NBR 439",
+            "uPrice": 4.0533
+        },
+        {
+            "number": "440",
+            "name": "Oring NBR 440",
+            "uPrice": 4.226
+        },
+        {
+            "number": "441",
+            "name": "Oring NBR 441",
+            "uPrice": 4.586
+        },
+        {
+            "number": "442",
+            "name": "Oring NBR 442",
+            "uPrice": 4.7174
+        },
+        {
+            "number": "443",
+            "name": "Oring NBR 443",
+            "uPrice": 4.8494
+        },
+        {
+            "number": "444",
+            "name": "Oring NBR 444",
+            "uPrice": 4.9828
+        },
+        {
+            "number": "445",
+            "name": "Oring NBR 445",
+            "uPrice": 5.0853
+        },
+        {
+            "number": "446",
+            "name": "Oring NBR 446",
+            "uPrice": 5.3689
+        },
+        {
+            "number": "447",
+            "name": "Oring NBR 447",
+            "uPrice": 5.6132
+        }
+    ],
+    "or900": [
+        {
+            "number": "911",
+            "name": "Oring NBR 911 /3x22",
+            "uPrice": 0.1793
+        },
+        {
+            "number": "912",
+            "name": "Oring NBR 912 /3X23.5",
+            "uPrice": 0.1821
+        },
+        {
+            "number": "913",
+            "name": "Oring NBR 913 /3X25",
+            "uPrice": 0.1905
+        },
+        {
+            "number": "914",
+            "name": "Oring NBR 914 /3X26.5",
+            "uPrice": 0.2185
+        },
+        {
+            "number": "916",
+            "name": "Oring NBR 916 /3X30",
+            "uPrice": 0.2409
+        },
+        {
+            "number": "918",
+            "name": "Oring NBR 918 /3X34.5",
+            "uPrice": 0.2802
+        },
+        {
+            "number": "920",
+            "name": "Oring NBR 920 /3X37.5",
+            "uPrice": 0.3082
+        },
+        {
+            "number": "924",
+            "name": "Oring NBR 924 /3X44",
+            "uPrice": 0.353
+        },
+        {
+            "number": "928",
+            "name": "Oring NBR 928 /3X53",
+            "uPrice": 0.4314
+        },
+        {
+            "number": "932",
+            "name": "Oring NBR 932 /3X59",
+            "uPrice": 0.5043
+        },
+        {
+            "number": "ORMM001",
+            "name": "Oring NBR 4x36",
+            "uPrice": "1.2930"
+        }
+    ],
+    "oref": [
+        {
+            "number": "001",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 0.05
+        },
+        {
+            "number": "002",
+            "name": "Oring Refrigeración VERDE 5/16 N",
+            "uPrice": 0.0528
+        },
+        {
+            "number": "003",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 0.06
+        },
+        {
+            "number": "004",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 0.06
+        },
+        {
+            "number": "005",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 0.08
+        },
+        {
+            "number": "006",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 0.09
+        },
+        {
+            "number": "007",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 0.07
+        },
+        {
+            "number": "008",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 0.08
+        },
+        {
+            "number": "009",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 0.09
+        },
+        {
+            "number": "010",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 0.11
+        },
+        {
+            "number": "011",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 0.13
+        },
+        {
+            "number": "012",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 0.16
+        },
+        {
+            "number": "013",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 1.24
+        },
+        {
+            "number": "014",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 1.36
+        },
+        {
+            "number": "015",
+            "name": "Oring Refrigeración VERDE",
+            "uPrice": 0.28
+        }
+    ],
+    "orefk": [
+        {
+            "number": "001",
+            "name": "Kit Refrigeración para",
+            "uPrice": 3.56
+        },
+        {
+            "number": "002",
+            "name": "Kit Refrigeración para Compresor FX15FS10 Verde",
+            "uPrice": 1.81
+        }
+    ],
+    "ormm": [
+        {
+            "number": "001",
+            "name": "Oring NBR 4x36 mm",
+            "uPrice": 1.2
+        }
+    ],
+    "orv": [
+        {
+            "number": "008",
+            "name": "Oring Viton 008",
+            "uPrice": 0.12
+        },
+        {
+            "number": "009",
+            "name": "Oring Viton 009",
+            "uPrice": 0.13
+        },
+        {
+            "number": "010",
+            "name": "Oring Viton 010",
+            "uPrice": 0.14
+        },
+        {
+            "number": "011",
+            "name": "Oring Viton 011",
+            "uPrice": 0.16
+        },
+        {
+            "number": "012",
+            "name": "Oring Viton 012",
+            "uPrice": 0.19
+        },
+        {
+            "number": "013",
+            "name": "Oring Viton 013",
+            "uPrice": 0.21
+        },
+        {
+            "number": "014",
+            "name": "Oring Viton 014",
+            "uPrice": 0.24
+        },
+        {
+            "number": "015",
+            "name": "Oring Viton 015",
+            "uPrice": 0.26
+        },
+        {
+            "number": "016",
+            "name": "Oring Viton 016",
+            "uPrice": 0.3
+        },
+        {
+            "number": "018",
+            "name": "Oring Viton 018",
+            "uPrice": 0.35
+        },
+        {
+            "number": "019",
+            "name": "Oring Viton 019",
+            "uPrice": 0.39
+        },
+        {
+            "number": "020",
+            "name": "Oring Viton 020",
+            "uPrice": 0.41
+        },
+        {
+            "number": "021",
+            "name": "Oring Viton 021",
+            "uPrice": 0.46
+        },
+        {
+            "number": "022",
+            "name": "Oring Viton 022",
+            "uPrice": 0.49
+        },
+        {
+            "number": "023",
+            "name": "Oring Viton 023",
+            "uPrice": 0.51
+        },
+        {
+            "number": "024",
+            "name": "Oring Viton 024",
+            "uPrice": 0.55
+        },
+        {
+            "number": "025",
+            "name": "Oring Viton 025",
+            "uPrice": 0.58
+        },
+        {
+            "number": "026",
+            "name": "Oring Viton 026",
+            "uPrice": 0.62
+        },
+        {
+            "number": "027",
+            "name": "Oring Viton 027",
+            "uPrice": 0.64
+        },
+        {
+            "number": "028",
+            "name": "Oring Viton 028",
+            "uPrice": 0.68
+        },
+        {
+            "number": "029",
+            "name": "Oring Viton 029",
+            "uPrice": 0.73
+        },
+        {
+            "number": "102",
+            "name": "Oring Viton 102",
+            "uPrice": 0.14
+        },
+        {
+            "number": "103",
+            "name": "Oring Viton 103",
+            "uPrice": 0.16
+        },
+        {
+            "number": "107",
+            "name": "Oring Viton 107",
+            "uPrice": 0.25
+        },
+        {
+            "number": "108",
+            "name": "Oring Viton 108",
+            "uPrice": 0.27
+        },
+        {
+            "number": "109",
+            "name": "Oring Viton 109",
+            "uPrice": 0.37
+        },
+        {
+            "number": "110",
+            "name": "Oring Viton 110",
+            "uPrice": 0.36
+        },
+        {
+            "number": "111",
+            "name": "Oring Viton 111",
+            "uPrice": 0.41
+        },
+        {
+            "number": "112",
+            "name": "Oring Viton 112",
+            "uPrice": 0.46
+        },
+        {
+            "number": "113",
+            "name": "Oring Viton 113",
+            "uPrice": 0.5
+        },
+        {
+            "number": "114",
+            "name": "Oring Viton 114",
+            "uPrice": 0.56
+        },
+        {
+            "number": "115",
+            "name": "Oring Viton 115",
+            "uPrice": 0.6
+        },
+        {
+            "number": "116",
+            "name": "Oring Viton 116",
+            "uPrice": 0.65
+        },
+        {
+            "number": "117",
+            "name": "Oring Viton 117",
+            "uPrice": 0.7
+        },
+        {
+            "number": "118",
+            "name": "Oring Viton 118",
+            "uPrice": 0.75
+        },
+        {
+            "number": "119",
+            "name": "Oring Viton 119",
+            "uPrice": 0.79
+        },
+        {
+            "number": "120",
+            "name": "Oring Viton 120",
+            "uPrice": 0.83
+        },
+        {
+            "number": "121",
+            "name": "Oring Viton 121",
+            "uPrice": 1.1
+        },
+        {
+            "number": "122",
+            "name": "Oring Viton 122",
+            "uPrice": 1
+        },
+        {
+            "number": "123",
+            "name": "Oring Viton 123",
+            "uPrice": 1.05
+        },
+        {
+            "number": "124",
+            "name": "Oring Viton 124",
+            "uPrice": 1.09
+        },
+        {
+            "number": "125",
+            "name": "Oring Viton 125",
+            "uPrice": 1.16
+        },
+        {
+            "number": "126",
+            "name": "Oring Viton 126",
+            "uPrice": 1.28
+        },
+        {
+            "number": "127",
+            "name": "Oring Viton 127",
+            "uPrice": 1.33
+        },
+        {
+            "number": "128",
+            "name": "Oring Viton 128",
+            "uPrice": 1.42
+        },
+        {
+            "number": "129",
+            "name": "Oring Viton 129",
+            "uPrice": 1.46
+        },
+        {
+            "number": "130",
+            "name": "Oring Viton 130",
+            "uPrice": 1.6
+        },
+        {
+            "number": "131",
+            "name": "Oring Viton 131",
+            "uPrice": 1.72
+        },
+        {
+            "number": "132",
+            "name": "Oring Viton 132",
+            "uPrice": 1.78
+        },
+        {
+            "number": "133",
+            "name": "Oring Viton 133",
+            "uPrice": 1.89
+        },
+        {
+            "number": "134",
+            "name": "Oring Viton 134",
+            "uPrice": 2.01
+        },
+        {
+            "number": "135",
+            "name": "Oring Viton 135",
+            "uPrice": 2.06
+        },
+        {
+            "number": "136",
+            "name": "Oring Viton 136",
+            "uPrice": 2.13
+        },
+        {
+            "number": "137",
+            "name": "Oring Viton 137",
+            "uPrice": 2.19
+        },
+        {
+            "number": "201",
+            "name": "Oring Viton 201",
+            "uPrice": 0.43
+        },
+        {
+            "number": "202",
+            "name": "Oring Viton 202",
+            "uPrice": 0.51
+        },
+        {
+            "number": "204",
+            "name": "Oring Viton 204",
+            "uPrice": 0.67
+        },
+        {
+            "number": "205",
+            "name": "Oring Viton 205",
+            "uPrice": 0.75
+        },
+        {
+            "number": "206",
+            "name": "Oring Viton 206",
+            "uPrice": 0.83
+        },
+        {
+            "number": "207",
+            "name": "Oring Viton 207",
+            "uPrice": 0.9
+        },
+        {
+            "number": "208",
+            "name": "Oring Viton 208",
+            "uPrice": 0.99
+        },
+        {
+            "number": "209",
+            "name": "Oring Viton 209",
+            "uPrice": 1.07
+        },
+        {
+            "number": "210",
+            "name": "Oring Viton 210",
+            "uPrice": 1.12
+        },
+        {
+            "number": "211",
+            "name": "Oring Viton 211",
+            "uPrice": 1.22
+        },
+        {
+            "number": "212",
+            "name": "Oring Viton 212",
+            "uPrice": 1.31
+        },
+        {
+            "number": "213",
+            "name": "Oring Viton 213",
+            "uPrice": 1.39
+        },
+        {
+            "number": "214",
+            "name": "Oring Viton 214",
+            "uPrice": 1.47
+        },
+        {
+            "number": "215",
+            "name": "Oring Viton 215",
+            "uPrice": 1.55
+        },
+        {
+            "number": "216",
+            "name": "Oring Viton 216",
+            "uPrice": 1.69
+        },
+        {
+            "number": "217",
+            "name": "Oring Viton 217",
+            "uPrice": 1.77
+        },
+        {
+            "number": "218",
+            "name": "Oring Viton 218",
+            "uPrice": 1.84
+        },
+        {
+            "number": "219",
+            "name": "Oring Viton 219",
+            "uPrice": 1.92
+        },
+        {
+            "number": "220",
+            "name": "Oring Viton 220",
+            "uPrice": 2.01
+        },
+        {
+            "number": "221",
+            "name": "Oring Viton 221",
+            "uPrice": 2.1
+        },
+        {
+            "number": "222",
+            "name": "Oring Viton 222",
+            "uPrice": 2.21
+        },
+        {
+            "number": "223",
+            "name": "Oring Viton 223",
+            "uPrice": 2.42
+        },
+        {
+            "number": "224",
+            "name": "Oring Viton 224",
+            "uPrice": 2.58
+        },
+        {
+            "number": "225",
+            "name": "Oring Viton 225",
+            "uPrice": 2.84
+        },
+        {
+            "number": "226",
+            "name": "Oring Viton 226",
+            "uPrice": 3.13
+        },
+        {
+            "number": "227",
+            "name": "Oring Viton 227",
+            "uPrice": 3.31
+        },
+        {
+            "number": "228",
+            "name": "Oring Viton 228",
+            "uPrice": 3.54
+        },
+        {
+            "number": "229",
+            "name": "Oring Viton 229",
+            "uPrice": 3.71
+        },
+        {
+            "number": "230",
+            "name": "Oring Viton 230",
+            "uPrice": 3.88
+        },
+        {
+            "number": "231",
+            "name": "Oring Viton 231",
+            "uPrice": 4.14
+        },
+        {
+            "number": "232",
+            "name": "Oring Viton 232",
+            "uPrice": 4.3
+        },
+        {
+            "number": "233",
+            "name": "Oring Viton 233",
+            "uPrice": 4.47
+        },
+        {
+            "number": "234",
+            "name": "Oring Viton 234",
+            "uPrice": 4.63
+        },
+        {
+            "number": "235",
+            "name": "Oring Viton 235",
+            "uPrice": 4.8
+        },
+        {
+            "number": "236",
+            "name": "Oring Viton 236",
+            "uPrice": 5.02
+        }
+    ],
+    "ota": [
+        {
+            "number": "001",
+            "name": "Oring NBR Tubo de agua",
+            "uPrice": 0.28
+        }
+    ],
+    "otv": [
+        {
+            "number": "001",
+            "name": "Oring Viton Kit tapa valvula",
+            "uPrice": 4.46
+        },
+        {
+            "number": "002",
+            "name": "Oring Viton Kit Tapa Valvula",
+            "uPrice": 8.16
+        },
+        {
+            "number": "003",
+            "name": "Oring Viton Kit Tapa Valvula",
+            "uPrice": 11.18
+        },
+        {
+            "number": "004",
+            "name": "Kit Tapa Valvula Aveo LT",
+            "uPrice": 3
+        }
+    ]
+}

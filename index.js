@@ -13,17 +13,23 @@ function toggleFullscreen() {
 document.querySelector("h1").addEventListener("click", toggleFullscreen)
 
 //data
-import products from "./data/products.js"
 import sellers from "./data/sellers.js"
+const productsUrl = './data/products.json'
 
-const Orders = new OrderList()
-const current_order = new Order()
-
-//Set selects options
-setProductsSelects(products)
-setSellersSelect(sellers)
-
-//Set buttons actions
-setAddButton(products, current_order)
-setFinishButton(current_order, Orders)
-setProcessButton(Orders)
+//from json
+fetch(productsUrl)
+.then(response => response.json())
+.then(products => {
+  const Orders = new OrderList()
+  const current_order = new Order()
+  
+  //Set selects options
+  setProductsSelects(products)
+  setSellersSelect(sellers)
+  
+  //Set buttons actions
+  setAddButton(products, current_order)
+  setFinishButton(current_order, Orders)
+  setProcessButton(Orders)
+})
+.catch(e => swal('Ocurrió un error, llame al técnico'))
