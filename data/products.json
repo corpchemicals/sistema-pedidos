@@ -612,22 +612,22 @@
         {
             "number": "001",
             "name": "Oring NBR Iny Asiatico",
-            "uPrice": 0.07
+            "uPrice": 0.0711
         },
         {
             "number": "002",
             "name": "Oring NBR Iny Chevy",
-            "uPrice": 0.05
+            "uPrice": 0.0871
         },
         {
             "number": "003",
             "name": "Oring NBR Iny Universal",
-            "uPrice": 0.05
+            "uPrice": 0.053
         },
         {
             "number": "004",
             "name": "Oring VITON Iny Universal",
-            "uPrice": 0.22
+            "uPrice": 0.215
         },
         {
             "number": "005",
@@ -637,56 +637,66 @@
         {
             "number": "006",
             "name": "Oring NBR Iny Delphi Aveo",
-            "uPrice": 0.05
+            "uPrice": 0.0533
         },
         {
             "number": "007",
             "name": "Oring Viton Iny Delphi Aveo",
-            "uPrice": 0.2
+            "uPrice": 0.199
         },
         {
             "number": "008",
             "name": "Oring NBR Asiento Asiatico",
-            "uPrice": 0.19
+            "uPrice": 0.1981
         },
         {
             "number": "009",
             "name": "Oring VITON Iny Asiático",
-            "uPrice": 0.25
+            "uPrice": 0.2151
         },
         {
             "number": "010",
             "name": "Oring VITON Asiento Asiático",
-            "uPrice": 0.41
+            "uPrice": 0.35
         }
     ],
     "mic": [
         {
             "number": "001",
             "name": "Microfiltro Universal Largo tipo",
-            "uPrice": 0.09
+            "uPrice": 0.087
         },
         {
             "number": "002",
             "name": "Micro Filtro Universal corto tipo",
-            "uPrice": 0.14
+            "uPrice": 0.1458
         },
         {
             "number": "003",
             "name": "Micro Filtro Webber tipo Fiat",
-            "uPrice": 0.18
+            "uPrice": 0.189
         },
         {
             "number": "004",
             "name": "Micro Filtro Delphi",
-            "uPrice": 0.18
+            "uPrice": 0.1807
+        },
+        {
+            "number": "005",
+            "name": "MICRIFILTRO TOYOTA CAMRY/LEXUS/MITSUBISHI",
+            "uPrice": 0.1900
+        },
+        {
+            "number": "006",
+            "name": "MICROFILTRO UNIVERSAL LARGO METALICO ",
+            "uPrice": 0.1900
         }
     ],
     "oba": [
         {
             "number": "001",
             "name": "Oring NBR Bomba de Agua",
-            "uPrice": 0.83
+            "uPrice": 0.7691
         },
         {
             "number": "002",
@@ -696,64 +706,89 @@
         {
             "number": "003",
             "name": "Oring NBR Bomba de Agua",
-            "uPrice": 0.87
+            "uPrice": 0.8305
         },
         {
             "number": "004",
             "name": "Oring NBR Bomba de Agua",
-            "uPrice": 0.26
+            "uPrice": 0.8979
+        },
+        {
+            "number": "005",
+            "name": "BOMBA DE AGUA FORD: ECO SPORT 2.0/ FOCUS",
+            "uPrice": 0.6131
         }
     ],
     "obg": [
         {
             "number": "001",
             "name": "Oring Bomba Gas Aveo Optra",
-            "uPrice": 1.38
+            "uPrice": 1.3829
         },
         {
             "number": "002",
             "name": "Oring Bomba Gas Renault:",
-            "uPrice": 1.74
+            "uPrice": 1.736
         },
         {
             "number": "003",
             "name": "Oring Bomba Gas -Corsa",
-            "uPrice": 2.1
+            "uPrice": 2.295
         },
         {
             "number": "004",
             "name": "Oring Bomba Gas - Ford FX",
-            "uPrice": 2.1
+            "uPrice": 2.104
         },
         {
             "number": "005",
             "name": "Oring Bomba Gas - Peugeot",
-            "uPrice": 0.05
+            "uPrice": 2.0473
         },
         {
             "number": "006",
             "name": "Oring Bomba Gas - Peugeot",
-            "uPrice": 2.44
+            "uPrice": 2.1012
         },
         {
             "number": "007",
             "name": "Oring Bomba Gas - Toyota 4",
-            "uPrice": 2.64
+            "uPrice": 2.2833
         },
         {
             "number": "008",
             "name": "Oring Bomba Gas- Toyota",
-            "uPrice": 2.44
+            "uPrice": 2.104
         },
         {
             "number": "009",
             "name": "Oring Bomba Gas- Silverado",
-            "uPrice": 2.44
+            "uPrice": 2.295
         },
         {
             "number": "010",
             "name": "Oring Bomba Gas- Hilux",
-            "uPrice": 2.58
+            "uPrice": 2.1012
+        },
+        {
+            "number": "011",
+            "name": "BOMBA DE GASOLINA JEEP CHEROKEE LIBERTY MOTOR 3.7/KJ(2002-2007)/KK(2008-2012)",
+            "uPrice": 2.2950
+        },
+        {
+            "number": "012",
+            "name": "BOMBA DE GASOLINA CHEVROLET:CHEYENNE(HASTA 2005) / GRAND BLAZER TBI (1999-2001)",
+            "uPrice": 1.7209
+        },
+        {
+            "number": "013",
+            "name": "BOMBA DE GASOLINA FORD: SUPER DUTY F-350(2012)/ SUPER DUTY F-250(2011 EN ADELANTE ",
+            "uPrice": 2.2950
+        },
+        {
+            "number": "014",
+            "name": "BOMBA DE GASOLINA CHERY TIGGO",
+            "uPrice": 2.4293
         }
     ],
     "oct": [
@@ -2220,11 +2255,6 @@
             "number": "932",
             "name": "Oring NBR 932 /3X59",
             "uPrice": 0.5043
-        },
-        {
-            "number": "ORMM001",
-            "name": "Oring NBR 4x36",
-            "uPrice": "1.2930"
         }
     ],
     "oref": [
@@ -2320,7 +2350,7 @@
         {
             "number": "001",
             "name": "Oring NBR 4x36 mm",
-            "uPrice": 1.2
+            "uPrice": 1.2930
         }
     ],
     "orv": [
@@ -2774,7 +2804,17 @@
         {
             "number": "001",
             "name": "Oring NBR Tubo de agua",
-            "uPrice": 0.28
+            "uPrice": 0.2575
+        },
+        {
+            "number": "002",
+            "name": "TUBO DE AGUA VW:FOX",
+            "uPrice": 0.3522
+        },
+        {
+            "number": "003",
+            "name": "TUBO DE AGUA CHEVROLET: ORLANDO MOTOR 2.4",
+            "uPrice": 0.7301
         }
     ],
     "otv": [
