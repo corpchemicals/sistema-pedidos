@@ -14,7 +14,7 @@ document.querySelector("h1").addEventListener("click", toggleFullscreen)
 
 //data
 import sellers from "./data/sellers.js"
-const productsUrl = 'https://raw.githubusercontent.com/marcebollin/chemicals-json-products/main/products.json?token=APAMFQKUR5XIX6DAN52TYCTBSP2K4'
+const productsUrl = 'https://raw.githubusercontent.com/marcebollin/chemicals-json-products/main/products.json'
 
 //from json
 fetch(productsUrl)
