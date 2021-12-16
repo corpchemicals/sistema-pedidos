@@ -74,14 +74,14 @@ export default class OrderList {
     const toIn = {}
     const toOut = {}
     for(const product of unified) {
-      if(product.category === "kit") {
+      if(product.hasOwnProperty("content")) {
         const unifiedAmount =
           product.amount
             .split("-")
             .map(elem => parseInt(elem))
             .reduce((acc, cv) => acc + cv)
 
-        toIn[`kit${product.number}`] = unifiedAmount
+        toIn[`${product.key}`] = unifiedAmount
 
         for(const content of product.content) {
           let { category, number, amount } = content
@@ -99,6 +99,7 @@ export default class OrderList {
     const toOutOrdered = {}
     Object.keys(toOut).sort().forEach(key => toOutOrdered[key] = toOut[key])
 
+    console.log(toIn, toOutOrdered);
     return [toIn, toOutOrdered]
   }
 
@@ -113,7 +114,7 @@ export default class OrderList {
       Object.entries(to).forEach(pair => {
         let [ name, amount ] = pair
         //for or<number> series content like or000 or100
-        if(name.startsWith("or")) name = name.slice(5)
+        if(name.startsWith("or") && !isNaN(+name.charAt(2))) name = name.slice(5)
 
         const span = document.createElement("span")
         span.innerText = amount
