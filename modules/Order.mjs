@@ -51,6 +51,13 @@ export class Order {
          })
       }
    
+   #getCategoryByKeyName(keyName) {
+      const splitted = keyName.split("")
+      let category = ""
+      for(const char of splitted) if(isNaN(char)) category += char
+      return category
+   }
+
    addProducts(products, amount) {
       products.forEach((product) => {
          const productIndex = this.total.findIndex(element => element.keyName === product.keyName)
@@ -59,6 +66,7 @@ export class Order {
          if(productExist) this.total[productIndex].amount += amount
          else {
             product.amount = amount
+            product.category = this.#getCategoryByKeyName(product.keyName)
             this.total.push(product)
          }
          

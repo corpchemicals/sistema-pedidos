@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/pdf-styles.css">
+  <link rel="stylesheet" href="./styles/pdf-styles.css" media="print">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=Montserrat:wght@500&display=swap" rel="stylesheet">
   
-  <title>Vendedores</title>
+  <title>Sistema de Pedidos</title>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script type="module" src="./index.js"></script>
 </head>
@@ -131,7 +131,7 @@
         <h2>Pedidos totales</h2>
         <ol class="orders-summary-list" id="total-orders-summary">        
         </ol>
-        <button type="submit" id="finish-session" class="form-button send-button">Procesar Pedidos</button>
+        <button type="button" id="finish-session" class="form-button send-button">Procesar Pedidos</button>
       </section>
     </form>
   </main>

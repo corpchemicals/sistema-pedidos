@@ -3,15 +3,15 @@ export class OrderList {
    constructor() {
       this.list = []
       this.unified = []
-
-      // const storageList = window.localStorage.getItem('list') 
-      // const storageUnified = window.localStorage.getItem('unified') 
-    
-      // if(storageList && storageUnified) {
-      //    this.list = JSON.parse(storageList.replace("\n", ""))
-      //    this.unified = JSON.parse(storageUnified.replace("\n", ""))
-      //    this.list.forEach(order => this.printOrder(order))
-      // }
+      
+      const storageList = window.localStorage.getItem('list') 
+      const storageUnified = window.localStorage.getItem('unified') 
+      
+      if(storageList && storageUnified) {
+         this.list = JSON.parse(storageList.replace("\n", ""))
+         this.unified = JSON.parse(storageUnified.replace("\n", ""))
+         this.list.forEach(order => this.#printOrder(order))
+      }
    }
 
    addOrder(order) {
@@ -19,8 +19,8 @@ export class OrderList {
       this.#unifyProducts(order)
       this.#printOrder(order)
 
-      // window.localStorage.setItem('list', JSON.stringify(this.list))
-      // window.localStorage.setItem('unified', JSON.stringify(this.unified))
+      window.localStorage.setItem('list', JSON.stringify(this.list))
+      window.localStorage.setItem('unified', JSON.stringify(this.unified))
    }
 
    #unifyProducts(order) {
@@ -32,7 +32,7 @@ export class OrderList {
          const index = this.unified.findIndex(
             uProduct => uProduct.category === category && uProduct.number === number)
          
-         if(index === -1) this.unified.push({...product})
+         if(index === -1) this.unified.push({...product, amount: `${amount}`})
          else this.unified[index].amount += `-${amount}`
       }
    }
@@ -69,7 +69,6 @@ export class OrderList {
       hidedUl.classList.add("hided-ul")
       for(const product of products) {
          const { amount, keyName } = product
-         console.log(product);
       
          const li = DOM.create("li")
          li.innerText = `${keyName.toUpperCase()}: ${amount} unds.`
@@ -85,21 +84,21 @@ export class OrderList {
       const toOut = {}
       for(const product of this.unified) {
          if(product.hasOwnProperty("content")) {
-            const { amount, keyName, content }
+            const { amount, keyName, content } = product
             const unifiedAmount = 
                amount.split("-")
-               .map(amount => amount.parseInt(amount))
+               .map(amount => parseInt(amount))
                .reduce((acc, cv) => acc + cv)
 
             toIn[keyName] = unifiedAmount
 
             for(const element of content) {
-               const { category, number, amount } = content
+               const { category, number, amount } = element
                const keyContent = category + number
                const newAmount = amount * unifiedAmount
 
                const keyContentExist = toOut.hasOwnProperty(keyContent)
-               toOut[keyContent] += (keyContentExist) ? newAmount : 0
+               toOut[keyContent] = (keyContentExist) ? toOut[keyContent] + newAmount : newAmount
             }
          }
       }
@@ -129,11 +128,10 @@ export class OrderList {
    #makePDFDisarmedSection() {
       const section = DOM.create("section")
       section.classList.add("disarmed-pdf-section")
-      let toggleColor = true
 
       const [toIn, toOut] = this.#getDisarmedKits()
       const toInOl = this.#createDisarmedList(toIn, "green-amount")
-      const toOutOl = this.#createDisarmedList(toIn, "red-amount")
+      const toOutOl = this.#createDisarmedList(toOut, "red-amount")
 
       section.append(toInOl, toOutOl)
       return section
@@ -166,8 +164,10 @@ export class OrderList {
          const productPrice = amount * uPrice
 
          const li = DOM.create("li")
-         li.innerHTML = `<span class="bold">${keyName}</span> | ${shortedName} unds. = <span class="bold">${productPrice.toFixed(2)}</span>`
+         li.innerHTML = `<span class="bold">${keyName.toUpperCase()}</span> | ${shortedName} unds. = <span class="bold">${productPrice.toFixed(2)}</span>`
+         ol.append(li)
       }
+      return ol
    }
 
    #makePDFOrdersSection() {
@@ -179,7 +179,7 @@ export class OrderList {
          const orderOl = this.#createOrderProductsOl(order) 
          
          const h3 = DOM.create("h3")
-         h3.innerText = `Precio Total: ${order.price}$`
+         h3.innerText = `Precio Total: ${order.price.toFixed(2)}$`
          
          div.append(orderDataElement)
          div.append(orderOl)
@@ -211,7 +211,7 @@ export class OrderList {
       group.forEach(product => {
          const { name, amount, keyName } = product
          const li = DOM.create("li")
-         li.innerHTML = `<span class="bold">${keyName}</span> | ${name}: <span class="bold">${amount}</span>`
+         li.innerHTML = `<span class="bold">${keyName.toUpperCase()}</span> | ${name}: <span class="bold">${amount}</span>`
          ol.appendChild(li)
       })
 
@@ -227,13 +227,61 @@ export class OrderList {
          const ol = this.#createAssembleOl(group)
          section.append(ol)
       }
-
+      console.log(groupedByCategory);
       return section
    }
 
    // Process results
-   cleanResults() {
-      const resultsContainer = DOM.get("#results")
+   #cleanResults() {
+      const resultsContainer = DOM.get("#pdf-results")
       DOM.removeAllChilds(resultsContainer)
+   }
+
+   makePDF() {
+      if(this.list.length === 0) return;
+      Swal.fire({
+         title: '¿Seguro que quieres procesar los pedidos?',
+         text: "No podrás realizar cambios después",
+         icon: 'warning',
+         showCancelButton: true,
+         confirmButtonColor: '#3085d6',
+         cancelButtonColor: '#d33',
+         confirmButtonText: 'Sí, procesar',
+         cancelButtonText: 'Cancelar'
+      }).then((result) => {
+         if (result.isConfirmed) {
+            const resultsContainer = DOM.get("#pdf-results")
+            const date = new Date();
+            const dateText = `${date.getDate()}-${date.getMonth() + 1}`
+            console.log(this);
+            // Sorting unified array
+            this.unified.sort((a, b) => {
+               if(a.key > b.key) return 1
+               if(a.key < b.key) return -1
+         
+               return 0
+            })      
+      
+            const orderSection = this.#makePDFOrdersSection()
+            const disarmedSection = this.#makePDFDisarmedSection()
+            const assembleSection = this.#makePDFAssembleSection()
+      
+            document.title = `${dateText}-pedidos`
+            resultsContainer.append(orderSection)
+            window.print()
+            this.#cleanResults()
+      
+            document.title = `${dateText}-armaje`
+            resultsContainer.append(assembleSection)
+            resultsContainer.append(disarmedSection)
+            window.print()
+            this.#cleanResults()
+      
+            this.#cleanResults()
+            document.title = "Sistema de Pedidos"
+      
+            window.localStorage.clear()
+         }
+      })
    }
 }

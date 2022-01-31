@@ -18,6 +18,7 @@ export class Session {
          this.#setSelects(products)
          this.#setAddButton(products)
          this.#setSubmitButton()
+         DOM.get("#finish-session").addEventListener("click", () => this.orderList.makePDF())
       } catch(err) {
          swal('Ocurrió un error')
       }
