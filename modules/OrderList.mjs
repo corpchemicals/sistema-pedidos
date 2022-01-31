@@ -33,7 +33,7 @@ export class OrderList {
          const index = this.unified.findIndex(
             uProduct => uProduct.category === category && uProduct.number === number)
          
-         if(index === -1) this.unified.push(product)
+         if(index === -1) this.unified.push({...product})
          else this.unified[index].amount += `-${amount}`
       }
    }
@@ -45,10 +45,10 @@ export class OrderList {
       const liContainerTitle = document.createElement("p")
       liContainerTitle.innerHTML = 
          `<span class="blue-colored-string">
-            ${seller}: 
+            ${seller}:
          </span>
          <span class="dark-color-string">
-            ${clientName.substring(0,25)}...
+            ${clientName.substring(0,25)}
          </span>
          <span class="blue-colored-string">
             ${orderPrice.toFixed(2)} $
@@ -70,6 +70,7 @@ export class OrderList {
       hidedUl.classList.add("hided-ul")
       for(const product of products) {
          const { amount, keyName } = product
+         console.log(product);
       
          const li = document.createElement("li")
          li.innerText = `${keyName.toUpperCase()}: ${amount} unds.`

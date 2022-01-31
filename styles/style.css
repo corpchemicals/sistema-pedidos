@@ -321,8 +321,12 @@ abbr[title]:focus::after {
   font-size: 1.2rem;
 }
 
+.orders-summary-list li > p > span {
+  margin: 0 2px;
+}
+
 .orders-summary-list li > ul {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 /* For js */

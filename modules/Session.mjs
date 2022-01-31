@@ -143,6 +143,7 @@ export class Session {
             clientAddress: DOM.get("#client-address").value,
          }
    
+         if(this.order.total.length == 0) return;
          Swal.fire({
             title: '¿Seguro que quieres agregar el pedido?',
             text: "No podrás realizar cambios en él",
