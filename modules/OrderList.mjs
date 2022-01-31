@@ -17,8 +17,7 @@ export class OrderList {
 
    addOrder(order) {
       this.list.push(order)
-      console.log(order);
-      // this.#unifyProducts(order)
+      this.#unifyProducts(order)
 
       window.localStorage.setItem('list', JSON.stringify(this.list))
       window.localStorage.setItem('unified', JSON.stringify(this.unified))
@@ -26,7 +25,8 @@ export class OrderList {
 
    #unifyProducts(order) {
       //Unify orders into a single reference about a product
-      for(const product of order.products) {
+      console.log(order.total);
+      for(const product of order.total) {
          const {category, number, amount} = product
 
          const index = this.unified.findIndex(

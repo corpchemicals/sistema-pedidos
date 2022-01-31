@@ -8,13 +8,15 @@ export class Order {
       this.#init()
    }
 
-   clean() {
-      this.total = []
-      this.data = {}
-      this.price = 0
+   #cleanInterface() {
+     const summaryElement = DOM.get("#order-summary")
+     const summaryPrice = DOM.get("#order-price")
+      summaryPrice.innerText = "$ 0.00"
+     DOM.removeAllChilds(summaryElement)
    }
 
    #init() {
+      this.#cleanInterface()
       this.#setListElementListener()
    }
 

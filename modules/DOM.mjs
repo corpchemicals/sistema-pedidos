@@ -15,9 +15,8 @@ export class DOM {
   }
 
   static removeAllChilds(parent) {
-    while(parent.lastChild.value) {
-      parent.removeChild(parent.lastChild)
-    }
+    const children = [...parent.children]
+    children.forEach(child => parent.removeChild(child))
   }
 
   static removeElement(element) {

@@ -145,6 +145,7 @@ export class Session {
    
          this.order.setData(orderData)
          this.orderList.addOrder(this.order)
+         this.order.cleanInterface()
          this.order = new Order()
       }) 
    }
