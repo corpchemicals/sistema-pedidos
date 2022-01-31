@@ -312,12 +312,43 @@ abbr[title]:focus::after {
   color: var(--light-blue);  
 }
 
+.summary.total-orders-summary {
+  max-width: 450px;
+}
+
+.orders-summary-list li > p {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.orders-summary-list li > ul {
+  padding-left: 10px;
+}
+
+/* For js */
 .off-color {
   background-color: var(--dark-gray);
 }
 
 .on-color {
   background-color: var(--light-blue);
+}
+
+.blue-colored-string {
+  color: var(--light-blue);
+}
+
+.dark-colored-string {
+  color: hsl(0, 0%, 15%);
+}
+
+.hided-ul {
+  display: none;
+  list-style-position: inside;
+}
+
+.orders-summary-list li:hover ul.hided-ul {
+  display: block;
 }
 
 .displayNone {

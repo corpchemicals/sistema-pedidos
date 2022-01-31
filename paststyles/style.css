@@ -292,6 +292,15 @@ header {
   display: block;
 }
 
+.orders-summary-list li:hover .hided-ol {
+  display: block;
+}
+
+.hided-ul {
+  display: none;
+  list-style-position: inside;
+}
+
 @media(min-width: 450px) {
   .orders-top-container {
     flex-direction: row;

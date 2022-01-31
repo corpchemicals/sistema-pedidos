@@ -143,10 +143,27 @@ export class Session {
             clientAddress: DOM.get("#client-address").value,
          }
    
-         this.order.setData(orderData)
-         this.orderList.addOrder(this.order)
-         this.order.cleanInterface()
-         this.order = new Order()
+         Swal.fire({
+            title: '¿Seguro que quieres agregar el pedido?',
+            text: "No podrás realizar cambios en él",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, agregar',
+            cancelButtonText: 'Cancelar'
+         }).then((result) => {
+            if (result.isConfirmed) {
+               this.order.setData(orderData)
+               this.orderList.addOrder(this.order)
+               this.order = new Order()
+               Swal.fire(
+                  '!Listo!',
+                  'El pedido fue agregado',
+                  'success'
+               )
+            }
+         })
       }) 
    }
 }
