@@ -30,7 +30,7 @@ export class Session {
 
    #setClientExistence() {
       const checkClientExistence = DOM.get("#toggle-client-existence")
-      const newClientFields = document.querySelectorAll(".new-client-field")
+      const newClientFields = DOM.getAll(".new-client-field")
       
       checkClientExistence.addEventListener("change", ({target}) => {
           const container = target.parentElement
@@ -142,7 +142,11 @@ export class Session {
             clientID: DOM.get("#client-identification").value,
             clientAddress: DOM.get("#client-address").value,
          }
+
+         orderData.clientPhone &&= `${DOM.get("#phone-area-code").value}-${clientPhone}`
+         orderData.clientID    &&= `${DOM.get("#identification-type").value}-${clientID}`
    
+
          if(this.order.total.length == 0) return;
          Swal.fire({
             title: '¿Seguro que quieres agregar el pedido?',

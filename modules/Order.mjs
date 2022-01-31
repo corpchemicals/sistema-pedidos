@@ -3,7 +3,13 @@ import { DOM } from './DOM.mjs'
 export class Order {
    constructor() {
       this.total = []
-      this.data = {}
+      this.data = {
+         seller: "",
+         clientName: "",
+         clientPhone: "",
+         clientID: "",
+         clientAddress: "",
+      }
       this.price = 0
       this.#init()
    }

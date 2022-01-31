@@ -7,6 +7,10 @@ export class DOM {
     return document.querySelector(key)
   }
 
+  static getAll(key) {
+    return document.querySelectorAll(key)
+  }
+
   static createOption(value, innerText = value) {
     const option = this.create("option")
     option.value = value
