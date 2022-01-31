@@ -135,17 +135,17 @@ export class Session {
    #setSubmitButton() {
       DOM.get("#send-order-form").addEventListener("submit", (ev) => {
          ev.preventDefault()
-         const seller = DOM.get("#seller").value
-         const clientData = {
-            name: DOM.get("#client-name").value,
-            phone: DOM.get("#client-phone").value,
-            identification: DOM.get("#client-identification").value,
-            address: DOM.get("#client-address").value,
+         const orderData = {
+            seller: DOM.get("#seller").value,
+            clientName: DOM.get("#client-name").value,
+            clientPhone: DOM.get("#client-phone").value,
+            clientID: DOM.get("#client-identification").value,
+            clientAddress: DOM.get("#client-address").value,
          }
    
-         this.order.setClientData(clientData)
-         this.orderList.addOrder(this.order, seller)
-         this.order.clean()
+         this.order.setData(orderData)
+         this.orderList.addOrder(this.order)
+         this.order = new Order()
       }) 
    }
 }

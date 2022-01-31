@@ -3,13 +3,15 @@ import { DOM } from './DOM.mjs'
 export class Order {
    constructor() {
       this.total = []
-      this.clientData = {}
+      this.data = {}
       this.price = 0
       this.#init()
    }
 
    clean() {
       this.total = []
+      this.data = {}
+      this.price = 0
    }
 
    #init() {
@@ -121,7 +123,7 @@ export class Order {
       container.append(img)
    }
 
-   setClientData(clientData) {
-      this.clientData = {...clientData}
+   setData(data) {
+      this.data = {...data}
    }
 }
