@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Formato de Pedidos</title>
+    <meta name="description" content="Format orders to speed up processes">
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/print-styles.css" media="print">
+    
+    <!-- Js --><link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <script type="module" src="index.js"></script>
+</head>
+<body>
+    <main>
+        <section id="app">
+            <header>
+                <div class="header__company">
+                    <h1>Formato de Pedidos</h1>
+                    <h3>Corporación Chemicals</h3>
+                </div>
+        
+                <section class="header__inputs">
+                    <select id="category" class="iProduct" type="text" autocomplete="on">
+                        <option value>Escoja la categoría</option>
+                    </select>
+                    
+                    <div class="headers__inputs--from-to">
+                        <select id="from-number" class="iProduct" type="text" autocomplete="on">
+                            <option value>Desde...</option>
+                        </select>
+                    
+                        <select id="to-number" class="iProduct" type="text" autocomplete="on">
+                            <option value>Hasta...</option>
+                        </select>
+                    </div>
+            
+                    <input 
+                        id="amount" 
+                        type="number" 
+                        placeholder="Ingrese la cantidad"
+                        min="1"
+                        autocomplete="off"
+                    />
+        
+                    <button id="add-product">Ingresar</button>    
+                </section>
+            </header>
+            
+            <section class="app__order-data">
+                <h2>Datos del Pedido</h2>
+                <input list="sellers" id="seller" class="order_info" placeholder="Ingrese el vendedor">
+                    <datalist id="sellers"></datalist>
+                
+                <section class="order-data__text-areas">
+                    <textarea 
+                        id="client" 
+                        class="order_info"
+                        cols="30" 
+                        rows="5" 
+                        placeholder="Ingrese datos del cliente"></textarea>
+                    
+                    <textarea 
+                        id="note"
+                        class="order_info"
+                        cols="30"
+                        rows="5"
+                        placeholder="Ingrese una nota"></textarea>
+                
+                </section>
+                <button id="finish-order">Finalizar Pedido</button>
+            </section>
+        </section>
+        <section class="lists">
+            <div class="current-order">
+                <h2>Productos:</h2>
+                <ul id="current-order-list"></ul>
+            </div>
+            
+            <div class="orders-list">
+                <div class="orders-top-container">
+                    <h2>Pedidos:</h2>
+                    <button id="process-orders">Procesar</button>
+                </div>
+                <ul id="orders-list"></ul>
+            </div>
+        </section>
+    </main>
+    <section id="results"></section>
+</body>
+</html>

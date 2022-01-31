@@ -16,7 +16,7 @@ function getPremadeOrderProducts(premadeOrder) {
    return products
 }
 
-function cleanPremadeOrderProducts(products) {
+function normalizePremadeOrderProducts(products) {
    // clean from premadeOrderProducts decoration
    const keyAmountPairs = products.map(productLine => productLine.split(":"))
    const cleanedPairs = keyAmountPairs.map(pair => {
@@ -38,4 +38,4 @@ const data = {
 }
 
 const splitted = getPremadeOrderProducts(newOrder)
-const cleaned = cleanPremadeOrderProducts(splitted)
+const cleaned = normalizePremadeOrderProducts(splitted)
