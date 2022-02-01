@@ -152,7 +152,6 @@ export class OrderList {
       p.innerHTML += `<span class="bold">Cliente:</span> ${clientName}<br>`
       
       if(clientID !== "") {
-         p.innerHTML += `<span class="bold">Cliente:</span> ${clientName}<br>`
          p.innerHTML += `<span class="bold">Identificación:</span> ${clientID}<br>`
          p.innerHTML += `<span class="bold">Teléfono:</span> ${clientPhone}<br>`
          p.innerHTML += `<span class="bold">Dirección:</span> ${clientAddress}<br>`
@@ -262,12 +261,12 @@ export class OrderList {
 
       document.title = `${dateText}-pedidos`
       resultsContainer.append(orderSection)
+      resultsContainer.append(disarmedSection)
       window.print()
       this.#cleanResults()
 
       document.title = `${dateText}-armaje`
       resultsContainer.append(assembleSection)
-      resultsContainer.append(disarmedSection)
       window.print()
       this.#cleanResults()
 
