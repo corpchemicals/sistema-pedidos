@@ -163,6 +163,7 @@ export class OrderList {
    #createOrderProductsOl(order) {
       const ol = document.createElement("ol")
       const products = order.total
+      debugger
       for(const product of products) {
          const { name, amount, uPrice, keyName} = product
          const shortedName = name.substring(0, 30) + "..."
@@ -179,6 +180,7 @@ export class OrderList {
       const section = DOM.create("section")
       section.classList.add("orders-pdf-section")
       for(const order of this.list) {
+         debugger
          const div = DOM.create("div")
          const orderDataElement = this.#createOrderDataPElement(order)
          const orderOl = this.#createOrderProductsOl(order) 

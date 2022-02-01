@@ -62,15 +62,23 @@ export class Order {
       products.forEach((product) => {
          const productIndex = this.total.findIndex(element => element.keyName === product.keyName)
          const productExist = (productIndex > -1)
-         
-         if(productExist) this.total[productIndex].amount += amount
+         let productToPrint;         
+         if(productExist) {
+            this.total[productIndex].amount += amount
+            productToPrint = this.total[productIndex]
+         }
          else {
-            product.amount = amount
-            product.category = this.#getCategoryByKeyName(product.keyName)
-            this.total.push(product)
+            const newObj = {
+               ...product, 
+               amount: amount, 
+               category: this.#getCategoryByKeyName(product.keyName)
+            }
+
+            this.total.push(newObj)
+            productToPrint = newObj
          }
          
-         this.#printProduct(product)
+         this.#printProduct(productToPrint)
 
          const { uPrice } = product
          this.price += uPrice * amount
