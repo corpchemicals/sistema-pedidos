@@ -1,65 +1,65 @@
 main {
    display: none;
- }
+}
+  
+#results {
+   /* display: flex; */
+   /* flex-direction: column; */
+   /* align-items: center; */
+   display: block;
+}
+ 
+.orders-pdf-section {
+   position: relative;
+   display: block;
+   gap: 5px;
+}
+ 
+.orders-pdf-section div {
+   /* position relative to make works page break inside */
+   position: relative;
+   display: inline-block;
+   /* flex-direction: column; */
+   border: 1px solid black;
+   padding: 7px;
+   gap: 10px;
+   height: auto;
+   page-break-inside: avoid;
 
- html {
-   font-size: 1.1rem;
- }
- 
- #results {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 1cm;
- }
- 
- .disarmed-pdf-section {
-    page-break-inside: avoid;
-   display: flex;
-   gap: 2cm;
-   font-size: 1.2rem;
-   margin-top: 20px;
- }
- 
- .green-amount {
-   color: hsl(140, 80%, 30%);
- }
- 
- .red-amount {
-   color: hsl(0, 100%, 40%);
- }
-
- 
- .disarmed-pdf-section ol {
-   list-style: none;
- }
- 
- .orders-pdf-section {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
- }
- 
- .orders-pdf-section div {
-   display: flex;
-   flex-direction: column;
-   gap: 1mm;
-   margin: 5px;
 }
 
 .orders-pdf-section ol {
-    page-break-inside: avoid;
-   display: block;
+   /* position relative to make works page break inside */
    position: relative;
+   display: block;
    list-style: none;
- }
- 
- .orders-pdf-section ol > li {
+}
+
+.orders-pdf-section ol > li {
+   font-size: 0.85rem;
    margin: 5px 0;
- } 
+} 
+ 
+ .disarmed-pdf-section {
+   display: block;
+   font-size: 1.2rem;
+   margin-top: 20px;
+}
+
+   
+.disarmed-pdf-section ol {
+   margin: 40px 0;
+   page-break-inside: avoid;
+   display: block;
+}
+
+.disarmed-pdf-section ol > li {
+   display: inline-block;
+   margin: 5px 10px;
+}
  
  .assemble-pdf-section {
     page-break-before: always;
-    list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -80,3 +80,12 @@ main {
  h3 {
     color: black;
  }
+
+    
+ .green-amount {
+   color: hsl(140, 80%, 30%);
+}
+
+.red-amount {
+   color: hsl(0, 100%, 40%);
+}

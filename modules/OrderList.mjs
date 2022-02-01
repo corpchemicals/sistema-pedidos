@@ -122,7 +122,7 @@ export class OrderList {
          span.classList.add(colorHighlighterClass)
 
          const li = DOM.create("li")
-         li.innerText = `${name.toUpperCase()}: `
+         li.innerText = `-${name.toUpperCase()}: `
          li.append(span)
 
          ol.append(li)
