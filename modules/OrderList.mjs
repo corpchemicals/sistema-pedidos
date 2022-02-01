@@ -164,7 +164,7 @@ export class OrderList {
          const productPrice = amount * uPrice
 
          const li = DOM.create("li")
-         li.innerHTML = `<span class="bold">${keyName.toUpperCase()}</span> | ${shortedName} unds. = <span class="bold">${productPrice.toFixed(2)}</span>`
+         li.innerHTML = `<span class="bold">${keyName.toUpperCase()}</span> | ${shortedName}: ${amount} unds. = <span class="bold">${productPrice.toFixed(2)} $</span>`
          ol.append(li)
       }
       return ol
