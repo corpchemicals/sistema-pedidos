@@ -16,15 +16,9 @@
   box-sizing: border-box;
 }
 
-header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: var(--white);
-}
 
 .principal-logo {
-  width: 120px;
+  width: 80px;
 }
 
 main {
@@ -34,21 +28,17 @@ main {
 
 form {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 40px;
-  padding: 20px;
+  padding: 40px 0; 
 }
 
-.header-form {
+.seller-form {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.header-form .seller-wrapper {
-  min-width: 280px;
+  width: 100%;
 }
 
 h1, h2 {

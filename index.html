@@ -20,26 +20,24 @@
 <body>
   <main>
     <form id="send-order-form" action="#">
-      <header class="header-form">
-        <img src="./assets/chemicals-logo.png" alt="Chemicals Logo" class="principal-logo">
-        
-        <div class="form-data-wrapper seller-wrapper">
-          <label for="seller">Vendedor</label>
-          <input required name="seller" id="seller" />
-        </div>
-      </header>
-      
-      
-      <section class="form-client-data form-section">
-        <h2>Información del Cliente</h2>
+      <section class="form-order-data form-section">
+        <h2>Información del Pedido</h2>
+        <section class="seller-form">
+          <img src="./assets/chemicals-logo.png" alt="Chemicals Logo" class="principal-logo">
+          
+          <div class="form-data-wrapper seller-wrapper">
+            <label for="seller">Vendedor</label>
+            <input required name="seller" id="seller" />
+          </div>
+        </section>
 
-        <sectio class="toggle-existence-section">
+        <section class="toggle-existence-section">
           <div class="toggle off-color">
             <input id="toggle-client-existence" type="checkbox">
             <label class="toggle-item" for="toggle-client-existence"></label>
             <span class="toggle-message">Cliente Existente</span>
           </div>
-        </sectio>
+        </section>
 
         <div class="form-data-wrapper">
           <label for="client-name">Nombre</label>
