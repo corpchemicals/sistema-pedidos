@@ -19,7 +19,6 @@ main {
    /* position relative to make works page break inside */
    position: relative;
    display: inline-block;
-   /* flex-direction: column; */
    border: 1px solid black;
    padding: 7px;
    gap: 10px;
@@ -45,12 +44,25 @@ main {
    font-size: 1.2rem;
    margin-top: 20px;
 }
-
    
 .disarmed-pdf-section ol {
    margin: 40px 0;
-   page-break-inside: avoid;
    display: block;
+   page-break-inside: avoid;
+}
+
+.disarmed-pdf-section ol:first-child::before, .disarmed-pdf-section ol:last-child::before{
+   display: block;
+   margin-left: 40px;
+   font-size: 2rem;
+}
+
+.disarmed-pdf-section ol:first-child::before {
+   content: "Entrada";
+}
+
+.disarmed-pdf-section ol:last-child::before {
+   content: "Salida";
 }
 
 .disarmed-pdf-section ol > li {
@@ -58,31 +70,37 @@ main {
    margin: 5px 10px;
 }
  
- .assemble-pdf-section {
-    page-break-before: always;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-   }
+.assemble-pdf-section {
+   position: relative;
+   display: block;
+}
 
-.assemble-pdf-section li {
+.assemble-pdf-section ol {
+   position: relative;
+   display: inline-block;
+   page-break-inside: avoid;
+   margin: 20px 0;
+   list-style-position: inside;
+}
+
+.assemble-pdf-section ol li {
    margin: 2px 20px;
 } 
 
- .bold {
-    font-weight: bold;
- }
+.bold {
+   font-weight: bold;
+}
 
- h2 {
-    font-size: 1.4rem;
- }
+h2 {
+   font-size: 1.4rem;
+}
 
- h3 {
-    color: black;
- }
+h3 {
+   color: black;
+}
 
     
- .green-amount {
+.green-amount {
    color: hsl(140, 80%, 30%);
 }
 
