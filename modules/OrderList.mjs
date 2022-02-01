@@ -136,6 +136,8 @@ export class OrderList {
       section.classList.add("disarmed-pdf-section")
 
       const [toIn, toOut] = this.#getDisarmedKits()
+      console.log(Object.keys(toIn));
+      if(Object.keys(toIn).length === 0) return ""
       const toInOl = this.#createDisarmedList(toIn, "green-amount")
       const toOutOl = this.#createDisarmedList(toOut, "red-amount")
 

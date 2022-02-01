@@ -54,70 +54,70 @@ export class Session {
    }
 
    #setSelects(products) {
-         const categorySelect = DOM.get("select#category")
-         const fromNumberSelect = DOM.get("select#from-number")
-         const toNumberSelect = DOM.get("select#to-number")
+      const categorySelect = DOM.get("select#category")
+      const fromNumberSelect = DOM.get("select#from-number")
+      const toNumberSelect = DOM.get("select#to-number")
 
-         //fill categorySelect
-         this.#fillSelects({
-             select: categorySelect, 
-             data: products, 
-             isCategory: true
-         })
+      //fill categorySelect
+      this.#fillSelects({
+            select: categorySelect, 
+            data: products, 
+            isCategory: true
+      })
 
-         //Event listener when category is changing
-         categorySelect.addEventListener("change", ({target}) => {
-             DOM.removeAllChilds(fromNumberSelect)
-             DOM.removeAllChilds(toNumberSelect)
+      //Event listener when category is changing
+      categorySelect.addEventListener("change", ({target}) => {
+            DOM.removeAllChilds(fromNumberSelect)
+            DOM.removeAllChilds(toNumberSelect)
 
-             const category = target.value
+            const category = target.value
 
-             this.#fillSelects({
-                  select: fromNumberSelect, 
-                  data: products[category]
-             })
+            this.#fillSelects({
+               select: fromNumberSelect, 
+               data: products[category]
+            })
 
-             this.#fillSelects({
-                  select: toNumberSelect, 
-                  data: products[category]
-             })
-         })
+            this.#fillSelects({
+               select: toNumberSelect, 
+               data: products[category]
+            })
+      })
 
-         //Event listener when fromNumber is changing
-         fromNumberSelect.addEventListener("change", ({target}) => {
-             DOM.removeAllChilds(toNumberSelect)
+      //Event listener when fromNumber is changing
+      fromNumberSelect.addEventListener("change", ({target}) => {
+            DOM.removeAllChilds(toNumberSelect)
 
-             const category = categorySelect.value
-             const fromNumber = +target.value
-             const productsRemaining = products[category].slice(fromNumber)
+            const category = categorySelect.value
+            const fromNumber = +target.value
+            const productsRemaining = products[category].slice(fromNumber)
 
-             this.#fillSelects({
-                  select: toNumberSelect, 
-                  data: productsRemaining, 
-                  index: fromNumber
-             })
+            this.#fillSelects({
+               select: toNumberSelect, 
+               data: productsRemaining, 
+               index: fromNumber
+            })
 
-             toNumberSelect.value = fromNumber
-         })
+            toNumberSelect.value = fromNumber
+      })
    }
 
    #fillSelects({select, data, isCategory = false, index = 0}) {
-         const selectOptions = []
-         
-         if(isCategory) {
-             for(const category in data) {
-                  const option = DOM.createOption(category, category.toUpperCase())
-                  selectOptions.push(option)
-             } 
-         } else {
-             for(const { number, name } of data) {
-                  const option = DOM.createOption(index, `${number}: ${name}`)
-                  selectOptions.push(option)
-                  index++
-             }
-         }
+      const selectOptions = []
+      
+      if(isCategory) {
+            for(const category in data) {
+               const option = DOM.createOption(category, category.toUpperCase())
+               selectOptions.push(option)
+            } 
+      } else {
+            for(const { number, name } of data) {
+               const option = DOM.createOption(index, `${number}: ${name}`)
+               selectOptions.push(option)
+               index++
+            }
+      }
 
-         select.append(...selectOptions)
+      select.append(...selectOptions)
    }
 
    #setAddButton(products) {
