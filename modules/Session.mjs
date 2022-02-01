@@ -45,6 +45,7 @@ export class Session {
                    const wasntRemoved = input.hasAttribute("required")
                    if(wasntRemoved) input.removeAttribute("required")
                    else input.required = true
+                   input.value = ""
                })
       
                field.classList.toggle("displayNone")
