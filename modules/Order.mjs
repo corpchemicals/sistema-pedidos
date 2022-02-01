@@ -32,32 +32,25 @@ export class Order {
    }
 
    #setListElementListener() {
-         DOM.get("#order-summary").addEventListener("click", ({target}) => {
-            const isTargetTrashIcon = target.tagName == "IMG" //for icon
-            if(isTargetTrashIcon == false) return;
-            const productElement = target.parentElement
+      DOM.get("#order-summary").addEventListener("click", ({target}) => {
+         const isTargetTrashIcon = target.tagName == "IMG" //for icon
+         if(isTargetTrashIcon == false) return;
+         const productElement = target.parentElement
 
-            const productIndex = 
-               this.total.findIndex(product => product.keyName === productElement.dataset.keyName)
-            
-            const { uPrice, amount } = this.total[productIndex]            
-            const priceToRemove = uPrice * amount
-            this.price -= priceToRemove
+         const productIndex = 
+            this.total.findIndex(product => product.keyName === productElement.dataset.keyName)
+         
+         const { uPrice, amount } = this.total[productIndex]            
+         const priceToRemove = uPrice * amount
+         this.price -= priceToRemove
 
-            this.#updateTotalPriceElement()           
-            this.total.splice(productIndex, 1)
-            
-            DOM.removeElement(productElement)
-         })
-      }
-   
-   #getCategoryByKeyName(keyName) {
-      const splitted = keyName.split("")
-      let category = ""
-      for(const char of splitted) if(isNaN(char)) category += char
-      return category
+         this.#updateTotalPriceElement()           
+         this.total.splice(productIndex, 1)
+         
+         DOM.removeElement(productElement)
+      })
    }
-
+      
    addProducts(products, amount) {
       products.forEach((product) => {
          const productIndex = this.total.findIndex(element => element.keyName === product.keyName)
@@ -71,7 +64,7 @@ export class Order {
             const newObj = {
                ...product, 
                amount: amount, 
-               category: this.#getCategoryByKeyName(product.keyName)
+               category: DOM.get("#category").value
             }
 
             this.total.push(newObj)
