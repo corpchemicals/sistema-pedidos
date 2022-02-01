@@ -238,50 +238,36 @@ export class OrderList {
    }
 
    makePDF() {
-      if(this.list.length === 0) return;
-      Swal.fire({
-         title: '¿Seguro que quieres procesar los pedidos?',
-         text: "No podrás realizar cambios después",
-         icon: 'warning',
-         showCancelButton: true,
-         confirmButtonColor: '#3085d6',
-         cancelButtonColor: '#d33',
-         confirmButtonText: 'Sí, procesar',
-         cancelButtonText: 'Cancelar'
-      }).then((result) => {
-         if (result.isConfirmed) {
-            const resultsContainer = DOM.get("#pdf-results")
-            const date = new Date();
-            const dateText = `${date.getDate()}-${date.getMonth() + 1}`
-            console.log(this);
-            // Sorting unified array
-            this.unified.sort((a, b) => {
-               if(a.key > b.key) return 1
-               if(a.key < b.key) return -1
-         
-               return 0
-            })      
-      
-            const orderSection = this.#makePDFOrdersSection()
-            const disarmedSection = this.#makePDFDisarmedSection()
-            const assembleSection = this.#makePDFAssembleSection()
-      
-            document.title = `${dateText}-pedidos`
-            resultsContainer.append(orderSection)
-            window.print()
-            this.#cleanResults()
-      
-            document.title = `${dateText}-armaje`
-            resultsContainer.append(assembleSection)
-            resultsContainer.append(disarmedSection)
-            window.print()
-            this.#cleanResults()
-      
-            this.#cleanResults()
-            document.title = "Sistema de Pedidos"
-      
-            window.localStorage.clear()
-         }
-      })
+      const resultsContainer = DOM.get("#pdf-results")
+      const date = new Date();
+      const dateText = `${date.getDate()}-${date.getMonth() + 1}`
+
+      // Sorting unified array
+      this.unified.sort((a, b) => {
+         if(a.key > b.key) return 1
+         if(a.key < b.key) return -1
+   
+         return 0
+      })      
+
+      const orderSection = this.#makePDFOrdersSection()
+      const disarmedSection = this.#makePDFDisarmedSection()
+      const assembleSection = this.#makePDFAssembleSection()
+
+      document.title = `${dateText}-pedidos`
+      resultsContainer.append(orderSection)
+      window.print()
+      this.#cleanResults()
+
+      document.title = `${dateText}-armaje`
+      resultsContainer.append(assembleSection)
+      resultsContainer.append(disarmedSection)
+      window.print()
+      this.#cleanResults()
+
+      this.#cleanResults()
+      document.title = "Sistema de Pedidos"
+
+      window.localStorage.clear()
    }
 }
