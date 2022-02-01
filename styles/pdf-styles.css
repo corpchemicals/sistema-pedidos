@@ -15,7 +15,7 @@ main {
    gap: 5px;
 }
  
-.orders-pdf-section div {
+.orders-pdf-section div, .assemble-pdf-section ol {
    /* position relative to make works page break inside */
    position: relative;
    display: inline-block;
@@ -24,8 +24,11 @@ main {
    gap: 10px;
    height: auto;
    page-break-inside: avoid;
+   margin: .5%;
+}
+   
+.orders-pdf-section div {
    width: 49%;
-   margin: 0 .5%;
 }
 
 .orders-pdf-section ol {
@@ -77,11 +80,7 @@ main {
 }
 
 .assemble-pdf-section ol {
-   position: relative;
-   display: inline-block;
-   page-break-inside: avoid;
-   margin: 20px 0;
-   list-style-position: inside;
+   width: 30%;
 }
 
 .assemble-pdf-section ol li {

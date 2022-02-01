@@ -136,7 +136,6 @@ export class OrderList {
       section.classList.add("disarmed-pdf-section")
 
       const [toIn, toOut] = this.#getDisarmedKits()
-      console.log(Object.keys(toIn));
       if(Object.keys(toIn).length === 0) return ""
       const toInOl = this.#createDisarmedList(toIn, "green-amount")
       const toOutOl = this.#createDisarmedList(toOut, "red-amount")
@@ -225,9 +224,9 @@ export class OrderList {
       ol.appendChild(h2)
 
       group.forEach(product => {
-         const { name, amount, keyName } = product
+         const { amount, keyName } = product
          const li = DOM.create("li")
-         li.innerHTML = `<span class="bold">${keyName.toUpperCase()}</span> | ${name}: <span class="bold">${amount}</span>`
+         li.innerHTML = `<span class="bold">${keyName.toUpperCase()}</span>: ${amount}`
          ol.appendChild(li)
       })
 
