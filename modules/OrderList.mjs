@@ -93,8 +93,14 @@ export class OrderList {
             toIn[keyName] = unifiedAmount
 
             for(const element of content) {
-               const { category, number, amount } = element
-               const keyContent = category + number
+               let { category, number, amount } = element
+
+
+               // If category content is or200 or similar
+               const keyContent = (category.startsWith("or") && !isNaN(category.charAt(2)))
+                  ? "OR" + number
+                  : category + number
+
                const newAmount = amount * unifiedAmount
 
                const keyContentExist = toOut.hasOwnProperty(keyContent)
@@ -227,7 +233,7 @@ export class OrderList {
          const ol = this.#createAssembleOl(group)
          section.append(ol)
       }
-      console.log(groupedByCategory);
+
       return section
    }
 
