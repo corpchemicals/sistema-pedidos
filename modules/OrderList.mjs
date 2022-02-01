@@ -165,7 +165,7 @@ export class OrderList {
       const products = order.total
       for(const product of products) {
          const { name, amount, uPrice, keyName} = product
-         const shortedName = name.substring(0, 30) + "..."
+         const shortedName = name.substring(0, 28) + "..."
          const productPrice = amount * uPrice
 
          const li = DOM.create("li")
@@ -178,7 +178,16 @@ export class OrderList {
    #makePDFOrdersSection() {
       const section = DOM.create("section")
       section.classList.add("orders-pdf-section")
-      for(const order of this.list) {
+      const sortedListByLength = [...this.list].sort((a, b) => {
+         const aLength = a.total.length
+         const bLength = b.total.length
+         if(aLength > bLength) return 1
+         if(aLength < bLength) return -1
+   
+         return 0
+      })      
+
+      for(const order of sortedListByLength) {
          const div = DOM.create("div")
          const orderDataElement = this.#createOrderDataPElement(order)
          const orderOl = this.#createOrderProductsOl(order) 

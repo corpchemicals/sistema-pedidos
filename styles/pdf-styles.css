@@ -24,7 +24,8 @@ main {
    gap: 10px;
    height: auto;
    page-break-inside: avoid;
-
+   width: 49%;
+   margin: 0 .5%;
 }
 
 .orders-pdf-section ol {
