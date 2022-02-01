@@ -144,8 +144,8 @@ export class Session {
             clientAddress: DOM.get("#client-address").value,
          }
 
-         orderData.clientPhone &&= `${DOM.get("#phone-area-code").value}-${clientPhone}`
-         orderData.clientID    &&= `${DOM.get("#identification-type").value}-${clientID}`
+         orderData.clientPhone &&= `${DOM.get("#phone-area-code").value}-${orderData.clientPhone}`
+         orderData.clientID    &&= `${DOM.get("#identification-type").value}-${orderData.clientID}`
    
 
          if(this.order.total.length == 0) return;
