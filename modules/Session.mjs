@@ -206,10 +206,7 @@ export class Session {
       const button = DOM.get("#run-premade-order")
       button.addEventListener("click", () => {
          const premadeOrder = DOM.get("#premade-order").value.trim()
-         if(premadeOrder.startsWith("Cliente: ") === false) {
-            Swal.fire("El valor ingresado no es un pedido")
-            return  
-         }
+         if(premadeOrder === "") return;
 
          const splittedOrder = premadeOrder.split("\n").filter(line => line !== '')
          this.#changeDataInputValue(splittedOrder)
