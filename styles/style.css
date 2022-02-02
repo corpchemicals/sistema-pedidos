@@ -166,6 +166,30 @@ button {
   margin: 0 auto;
 }
 
+.premade-order-wrapper {
+  gap: 10px;
+}
+
+.premade-order-wrapper textarea{
+  outline: none;
+  border-radius: 20px;
+  padding: 10px;
+  resize: vertical;
+}
+
+.premade-order-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  place-items: center;
+}
+
+.premade-order-header button {
+  min-width: unset;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
 abbr.listed-product {
   text-transform: uppercase;
   text-decoration: none;
