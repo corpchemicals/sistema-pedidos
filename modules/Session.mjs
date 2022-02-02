@@ -17,6 +17,7 @@ export class Session {
          const products = await this.#getProductsFromURL()
          this.#setSelects(products)
          this.#setAddButton(products)
+         this.#setPremadeOrderButton(products)
          this.#setSubmitButton()
          DOM.get("#finish-session").addEventListener("click", () => this.orderList.makePDF())
       } catch(err) {
@@ -118,6 +119,109 @@ export class Session {
       }
 
       select.append(...selectOptions)
+   }
+
+   
+   // Premade Order
+   #findSubstringIndex = (array, substring) => array.findIndex(elem => elem.toLowerCase().includes(substring))
+   
+   #findPremadeOrderValue(premadeOrder, title) {
+      // find a value by its title
+      const titleIndex = this.#findSubstringIndex(premadeOrder, title)
+      const value = (titleIndex !== -1) ? premadeOrder[titleIndex].split(":")[1].trim() : ''
+      return value
+   }
+
+   #getPremadeOrderProducts(premadeOrder) {
+      const startIndex = this.#findSubstringIndex(premadeOrder, 'pedido')
+      const endIndex = this.#findSubstringIndex(premadeOrder, 'precio total')
+      const products = premadeOrder.slice(startIndex + 1, endIndex)
+      return products
+   }
+
+   #normalizePremadeOrderProducts(products) {
+      // clean from premadeOrderProducts decoration
+      const keyAmountPairs = products.map(productLine => productLine.split(":"))
+      const cleanedPairs = keyAmountPairs.map(pair => {
+         let [keyName, amount] = pair
+         keyName = keyName.substring(1).toLowerCase().trim() //delete first char
+         amount = amount.trim().split(" ")[0] //get first value previous a white space
+         return [keyName, amount]
+      })
+      return cleanedPairs
+   }
+
+   #changeDataInputValue(premadeOrder) {
+      const data = {
+         seller: this.#findPremadeOrderValue(premadeOrder, 'vendedor'),
+         clientName: this.#findPremadeOrderValue(premadeOrder, 'cliente'),
+         clientFullPhone: this.#findPremadeOrderValue(premadeOrder, 'teléfono'),
+         clientFullID: this.#findPremadeOrderValue(premadeOrder, 'identificación'),
+         clientAddress: this.#findPremadeOrderValue(premadeOrder, 'dirección'),
+      }
+
+      // add defaults option in an array when client exist
+      if(data.clientFullPhone == "" && data.clientFullID == "") {
+         data.clientFullPhone = ["", ""]
+         data.clientFullID = ["J", ""]
+         DOM.get("#toggle-client-existence").click()
+      }
+
+      const sellerInput = DOM.get("#seller")
+      sellerInput.value = data.seller
+   
+      const clientNameInput = DOM.get("#client-name")
+      clientNameInput.value = data.clientName
+   
+   
+      // Phone with its code
+      const clientPhoneAreaCode = DOM.get("#phone-area-code")
+      clientPhoneAreaCode.value = data.clientFullPhone[0]
+      const clientPhoneInput = DOM.get("#client-phone")
+      clientPhoneInput.value = data.clientFullPhone[1]
+   
+      // Identification with its code
+      const clientIdentificationTypeSelect = DOM.get("#identification-type")
+      clientIdentificationTypeSelect.value = data.clientFullID[0].toUpperCase() 
+      const clientIdentificationInput = DOM.get("#client-identification")
+      clientIdentificationInput.value = data.clientFullID[1]
+   
+      const clientAddress = DOM.get("#client-address")
+      clientAddress.value = data.clientAddress
+   }
+
+   #getCategoryByKeyName(keyName) {
+      const splittedKeyName = keyName.split("")
+      const isORSeries = keyName.startsWith("or") && !isNaN(splittedKeyName[2])
+      if(isORSeries) return `or${splittedKeyName[2]}00`
+
+      let category = ''
+      for(const char of splittedKeyName) {
+         if(!isNaN(char)) return category
+         category += char
+      }
+   }
+
+   #setPremadeOrderButton(products) {
+      const button = DOM.get("#run-premade-order")
+      button.addEventListener("click", () => {
+         const premadeOrder = DOM.get("#premade-order").value.trim()
+         if(premadeOrder.startsWith("Cliente: ") === false) {
+            Swal.fire("El valor ingresado no es un pedido")
+            return  
+         }
+
+         const splittedOrder = premadeOrder.split("\n").filter(line => line !== '')
+         this.#changeDataInputValue(splittedOrder)
+         const splittedProductsPairs = this.#getPremadeOrderProducts(splittedOrder)
+         const normalizedOrder = this.#normalizePremadeOrderProducts(splittedProductsPairs)
+
+         normalizedOrder.forEach(([keyName, amount]) => {
+            const category = this.#getCategoryByKeyName(keyName)
+            const product = products[category].filter(product => product.keyName === keyName)
+            this.order.addProducts(product, amount)
+         })
+      })
    }
 
    #setAddButton(products) {
