@@ -63,9 +63,9 @@ export class Order {
          else {
             const newObj = {
                ...product, 
-               amount: amount, 
-               category: DOM.get("#category").value
+               amount: amount 
             }
+            if(!newObj.hasOwnProperty("category")) newObj.category = DOM.get("#category").value
 
             this.total.push(newObj)
             productToPrint = newObj

@@ -155,16 +155,20 @@ export class Session {
       const data = {
          seller: this.#findPremadeOrderValue(premadeOrder, 'vendedor'),
          clientName: this.#findPremadeOrderValue(premadeOrder, 'cliente'),
-         clientFullPhone: this.#findPremadeOrderValue(premadeOrder, 'teléfono'),
+         clientFullPhone: this.#findPremadeOrderValue(premadeOrder, 'teléfono').split("-"),
          clientFullID: this.#findPremadeOrderValue(premadeOrder, 'identificación'),
          clientAddress: this.#findPremadeOrderValue(premadeOrder, 'dirección'),
       }
 
+      const toggleExistence = DOM.get("#toggle-client-existence")
       // add defaults option in an array when client exist
       if(data.clientFullPhone == "" && data.clientFullID == "") {
          data.clientFullPhone = ["", ""]
          data.clientFullID = ["J", ""]
-         DOM.get("#toggle-client-existence").click()
+         if(toggleExistence.checked == false) toggleExistence.click()
+      } else { 
+         data.clientFullID = [ data.clientFullID[0], data.clientFullID.substring(2) ]
+         if(toggleExistence.checked == true) toggleExistence.click()
       }
 
       const sellerInput = DOM.get("#seller")
@@ -216,7 +220,9 @@ export class Session {
          normalizedOrder.forEach(([keyName, amount]) => {
             const category = this.#getCategoryByKeyName(keyName)
             const product = products[category].filter(product => product.keyName === keyName)
-            this.order.addProducts(product, amount)
+            product[0].category = category
+            this.order.addProducts(product, parseInt(amount))
+            console.log(this.order);
          })
       })
    }
@@ -249,7 +255,7 @@ export class Session {
          orderData.clientPhone &&= `${DOM.get("#phone-area-code").value}-${orderData.clientPhone}`
          orderData.clientID    &&= `${DOM.get("#identification-type").value}-${orderData.clientID}`
    
-
+         
          if(this.order.total.length == 0) return;
          Swal.fire({
             title: '¿Seguro que quieres agregar el pedido?',
@@ -264,6 +270,9 @@ export class Session {
             if (result.isConfirmed) {
                this.order.setData(orderData)
                this.orderList.addOrder(this.order)
+               console.log(this.order);
+               console.log(this.orderList);
+
                this.order = new Order()
                Swal.fire(
                   '!Listo!',
