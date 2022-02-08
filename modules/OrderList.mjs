@@ -253,9 +253,10 @@ export class OrderList {
    }
 
    makePDF() {
+      if(this.list.length == 0) return;
       const resultsContainer = DOM.get("#pdf-results")
       const date = new Date();
-      const dateText = `${date.getDate()}-${date.getMonth() + 1}`
+      const dateFileTitle = `(${date.getHours()}:${date.getMinutes()})-${date.getDate()}-${date.getMonth() + 1}`
 
       // Sorting unified array
       this.unified.sort((a, b) => {
@@ -269,13 +270,13 @@ export class OrderList {
       const disarmedSection = this.#makePDFDisarmedSection()
       const assembleSection = this.#makePDFAssembleSection()
 
-      document.title = `${dateText}-pedidos`
+      document.title = `${dateFileTitle}-pedidos`
       resultsContainer.append(orderSection)
       resultsContainer.append(disarmedSection)
       window.print()
       this.#cleanResults()
 
-      document.title = `${dateText}-armaje`
+      document.title = `${dateFileTitle}-armaje`
       resultsContainer.append(assembleSection)
       window.print()
       this.#cleanResults()
