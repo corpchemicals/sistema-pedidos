@@ -124,6 +124,10 @@ export class Session {
 
    
    // Premade Order
+   #cleanPremadeOrderTextArea() {
+      DOM.get("#premade-order").value = ""
+   }
+
    #findSubstringIndex = (array, substring) => array.findIndex(elem => elem.toLowerCase().includes(substring))
    
    #findPremadeOrderValue(premadeOrder, title) {
@@ -223,8 +227,9 @@ export class Session {
             const product = products[category].filter(product => product.keyName === keyName)
             product[0].category = category
             this.order.addProducts(product, parseInt(amount))
-            console.log(this.order);
          })
+
+         this.#cleanPremadeOrderTextArea()
       })
    }
 
