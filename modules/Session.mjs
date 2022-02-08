@@ -106,7 +106,8 @@ export class Session {
       const selectOptions = []
       
       if(isCategory) {
-            for(const category in data) {
+         const sortedData = Object.keys({...data}).sort()
+         for(const category of sortedData) {
                const option = DOM.createOption(category, category.toUpperCase())
                selectOptions.push(option)
             } 
