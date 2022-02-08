@@ -242,6 +242,12 @@ export class Session {
       })
    }
 
+   #cleanRequiredDataInputs() {
+      // Except seller
+      const inputs = document.querySelectorAll("input[required]")
+      inputs.forEach(input => input.value = "")
+   }
+
    #setSubmitButton() {
       DOM.get("#send-order-form").addEventListener("submit", (ev) => {
          ev.preventDefault()
@@ -271,10 +277,9 @@ export class Session {
             if (result.isConfirmed) {
                this.order.setData(orderData)
                this.orderList.addOrder(this.order)
-               console.log(this.order);
-               console.log(this.orderList);
 
                this.order = new Order()
+               this.#cleanRequiredDataInputs()
                Swal.fire(
                   '!Listo!',
                   'El pedido fue agregado',
