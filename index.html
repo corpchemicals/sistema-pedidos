@@ -26,7 +26,7 @@
           <img src="./assets/chemicals-logo.png" alt="Chemicals Logo" class="principal-logo">
           
           <div class="form-data-wrapper seller-wrapper">
-            <label for="seller">Vendedor</label>
+            <label for="seller" class="required-label">Vendedor</label>
             <input required name="seller" id="seller" />
           </div>
         </section>
@@ -40,12 +40,12 @@
         </section>
 
         <div class="form-data-wrapper">
-          <label for="client-name">Nombre</label>
+          <label for="client-name" class="required-label">Nombre</label>
           <input required name="client-name" id="client-name">
         </div>
 
         <div class="form-data-wrapper phone-wrapper new-client-field">
-          <label for="client-phone">Teléfono</label>
+          <label for="phone-area-code" class="required-label">Teléfono</label>
           
           <footer class="double-input-wrapper">
             <input 
@@ -62,8 +62,26 @@
           </footer>
         </div>
 
+        <div class="form-data-wrapper phone-wrapper new-client-field">
+          <label for="optional-phone-area-code">Teléfono 2 <sup class="optional-label-text">(opcional)</sup></label>
+          
+          <footer class="double-input-wrapper">
+            <input 
+              type="tel" 
+              maxlength="4"
+              name="optional-phone-area-code" 
+              id="optional-phone-area-code"
+              placeholder="0414"
+              required
+              onkeyup="if(this.value.length == this.getAttribute('maxlength')) document.querySelector('#optional-client-phone').focus()"
+              />
+
+            <input required type="tel" maxlength="7" name="optional-client-phone" id="optional-client-phone" />
+          </footer>
+        </div>
+
         <div class="form-data-wrapper identification-wrapper new-client-field">
-          <label for="client-identification">RIF</label>
+          <label for="client-identification" class="required-label">RIF</label>
 
           <footer class="double-input-wrapper">
             <select name="identification-type" id="identification-type">
@@ -76,7 +94,7 @@
         </div>
 
         <div class="form-data-wrapper new-client-field">
-          <label for="client-address">Dirección</label>
+          <label for="client-address" class="required-label">Dirección</label>
           <input required type="text" name="client-address" id="client-address">
         </div>
       </section>
