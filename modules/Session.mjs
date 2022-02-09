@@ -160,7 +160,7 @@ export class Session {
          seller:                  this.#findPremadeOrderValue(premadeOrder, 'vendedor'),
          clientName:              this.#findPremadeOrderValue(premadeOrder, 'cliente'),
          clientFullPhone:         this.#findPremadeOrderValue(premadeOrder, 'teléfono').split("-"),
-         clientFullPhoneOptional: this.#findPremadeOrderValue(premadeOrder, 'teléfono2').split("-"),
+         // clientFullPhoneOptional: this.#findPremadeOrderValue(premadeOrder, 'teléfono2').split("-"),
          clientFullID:            this.#findPremadeOrderValue(premadeOrder, 'identificación'),
          clientAddress:           this.#findPremadeOrderValue(premadeOrder, 'dirección'),
       }
@@ -169,7 +169,7 @@ export class Session {
       // add defaults option in an array when client exist
       if(data.clientFullPhone == "" && data.clientFullID == "") {
          data.clientFullPhone = ["", ""]
-         data.clientFullPhoneOptional = ["", ""]
+         // data.clientFullPhoneOptional = ["", ""]
          data.clientFullID = ["J", ""]
          if(toggleExistence.checked == false) toggleExistence.click()
       } else { 
@@ -191,15 +191,15 @@ export class Session {
       clientPhoneInput.value = data.clientFullPhone[1]
 
       // Phone with its code
-      const clientPhoneAreaCodeOptional = DOM.get("#optional-phone-area-code")
-      const clientPhoneInputOptional = DOM.get("#optional-client-phone")
-      if(data.clientFullPhoneOptional.length > 1) {
-         clientPhoneAreaCodeOptional.value = data.clientFullPhoneOptional[0]
-         clientPhoneInputOptional.value = data.clientFullPhoneOptional[1]
-      } else {
-         clientPhoneAreaCodeOptional.value = ''
-         clientPhoneInputOptional.value = ''
-      }
+      // const clientPhoneAreaCodeOptional = DOM.get("#optional-phone-area-code")
+      // const clientPhoneInputOptional = DOM.get("#optional-client-phone")
+      // if(data.clientFullPhoneOptional.length > 1) {
+      //    clientPhoneAreaCodeOptional.value = data.clientFullPhoneOptional[0]
+      //    clientPhoneInputOptional.value = data.clientFullPhoneOptional[1]
+      // } else {
+      //    clientPhoneAreaCodeOptional.value = ''
+      //    clientPhoneInputOptional.value = ''
+      // }
    
       // Identification with its code
       const clientIdentificationTypeSelect = DOM.get("#identification-type")
@@ -271,13 +271,13 @@ export class Session {
             seller: DOM.get("#seller").value,
             clientName: DOM.get("#client-name").value,
             clientPhone: DOM.get("#client-phone").value,
-            clientPhoneOptional: DOM.get("#optional-client-phone").value,
+            // clientPhoneOptional: DOM.get("#optional-client-phone").value,
             clientID: DOM.get("#client-identification").value,
             clientAddress: DOM.get("#client-address").value,
          }
 
          orderData.clientPhone &&= `${DOM.get("#phone-area-code").value}-${orderData.clientPhone}`
-         orderData.clientPhoneOptional &&= `${DOM.get("#optional-phone-area-code").value}-${orderData.clientPhoneOptional}`
+         // orderData.clientPhoneOptional &&= `${DOM.get("#optional-phone-area-code").value}-${orderData.clientPhoneOptional}`
          orderData.clientID    &&= `${DOM.get("#identification-type").value}-${orderData.clientID}`
    
          
