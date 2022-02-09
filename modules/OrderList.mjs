@@ -146,7 +146,7 @@ export class OrderList {
 
    // PDF Order section
    #createOrderDataPElement(order) {
-      const {seller, clientName, clientPhone, clientID, clientAddress} = order.data
+      const {seller, clientName, clientPhone, clientPhoneOptional, clientID, clientAddress} = order.data
       
       const p = DOM.create("p")
       p.innerHTML = `<span class="bold">Vendedor:</span> ${seller}<br>`
@@ -155,7 +155,7 @@ export class OrderList {
       if(clientID !== "") {
          p.innerHTML += `<span class="bold">Identificación:</span> ${clientID}<br>`
          p.innerHTML += `<span class="bold">Teléfono:</span> ${clientPhone}<br>`
-         // if(clientPhoneOptional !== "") p.innerHTML += `<span class="bold">Teléfono2:</span> ${clientPhoneOptional}<br>`
+         if(clientPhoneOptional !== "") p.innerHTML += `<span class="bold">Teléfono2:</span> ${clientPhoneOptional}<br>`
          p.innerHTML += `<span class="bold">Dirección:</span> ${clientAddress}<br>`
       }
       
