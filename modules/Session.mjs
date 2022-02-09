@@ -259,9 +259,8 @@ export class Session {
       })
    }
 
-   #cleanRequiredDataInputs() {
-      // Except seller
-      const inputs = document.querySelectorAll("input[required]")
+   #cleanDataInputs() {
+      const inputs = document.querySelectorAll(".form-data-wrapper input")
       inputs.forEach(input => input.value = "")
    }
 
@@ -298,7 +297,7 @@ export class Session {
                this.orderList.addOrder(this.order)
 
                this.order = new Order()
-               this.#cleanRequiredDataInputs()
+               this.#cleanDataInputs()
                Swal.fire(
                   '!Listo!',
                   'El pedido fue agregado',
