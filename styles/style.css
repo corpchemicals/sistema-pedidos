@@ -250,7 +250,7 @@ abbr.listed-product {
   left: 90%;
   transform: translateY(-50%);
   cursor: pointer;
-  background-image: url('./assets/trash-icon.svg');
+  background-image: url('../assets/trash-icon.svg');
 }
 
 .summary footer h3 {
