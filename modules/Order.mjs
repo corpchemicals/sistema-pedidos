@@ -28,12 +28,12 @@ export class Order {
 
    #updateTotalPriceElement() {
       const totalPriceElement = DOM.get("#order-price")
-      totalPriceElement.innerText = this.price.toFixed(2) + "$"
+      totalPriceElement.innerText = (this.price === 0) ? "0.00$" : this.price.toFixed(2) + "$"
    }
 
    #setListElementListener() {
       DOM.get("#order-summary").addEventListener("click", ({target}) => {
-         const isTargetTrashIcon = target.tagName == "IMG" //for icon
+         const isTargetTrashIcon = target.tagName == "I" //for icon
          if(isTargetTrashIcon == false) return;
          const productElement = target.parentElement
 
@@ -132,11 +132,9 @@ export class Order {
 
       container.append(p)
 
-      // img trash icon tag 
-      const img = DOM.create("img")
+      // i trash icon tag 
+      const img = DOM.create("i")
       img.classList.add("trash-icon")
-      img.src = "./assets/trash-icon.svg"
-      img.alt = "Eliminar pedido"
       container.append(img)
    }
 

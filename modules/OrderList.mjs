@@ -3,7 +3,8 @@ export class OrderList {
    constructor() {
       this.list = []
       this.unified = []
-      
+      this.#setOrderSummaryDeleteListener()
+
       const storageList = window.localStorage.getItem('list') 
       const storageUnified = window.localStorage.getItem('unified') 
       
@@ -14,13 +15,50 @@ export class OrderList {
       }
    }
 
+   #updateLocalStorage() {
+      window.localStorage.setItem('list', JSON.stringify(this.list))
+      window.localStorage.setItem('unified', JSON.stringify(this.unified))
+   }
+
+   #findProductIndexFromUnified(keyName) {
+      return this.unified.findIndex(product => product.keyName === keyName)
+   }
+
+   #removeOrderFromUnified(products)  {
+      products.forEach(({keyName, amount}) => {
+         const unifiedIndex = this.#findProductIndexFromUnified(keyName)
+         const unifiedAmount = this.unified[unifiedIndex].amount
+         if(unifiedAmount.length === 1) {
+            this.unified.splice(unifiedIndex, 1)
+            return;
+         }
+
+         const splittedAmount = unifiedAmount.split("-")
+         const splittedIndex = splittedAmount.findIndex(uniAmount => uniAmount === amount+"")
+         splittedAmount.splice(splittedIndex, 1)
+         const joinedAmount = splittedAmount.join("-")
+         this.unified[unifiedIndex].amount = joinedAmount
+      })
+   }
+
+   #removeOrder(index) {
+      const { total } = this.list[index]
+      this.#removeOrderFromUnified(total)
+      this.list.splice(index, 1)
+
+      console.log(this.list);
+      console.log(this.unified);
+      this.#updateLocalStorage()
+   }
+
    addOrder(order) {
       this.list.push(order)
       this.#unifyProducts(order)
       this.#printOrder(order)
+      console.log(this.list);
+      console.log(this.unified);
 
-      window.localStorage.setItem('list', JSON.stringify(this.list))
-      window.localStorage.setItem('unified', JSON.stringify(this.unified))
+      this.#updateLocalStorage()
    }
 
    #unifyProducts(order) {
@@ -35,6 +73,17 @@ export class OrderList {
          if(index === -1) this.unified.push({...product, amount: `${amount}`})
          else this.unified[index].amount += `-${amount}`
       }
+   }
+
+   #setOrderSummaryDeleteListener() {
+      const ordersSummary = DOM.get("#total-orders-summary")
+      ordersSummary.addEventListener("click", ({target}) => {
+         if(target.tagName !== "I") return;
+         const li = target.parentElement.parentElement
+         const liIndex = [...ordersSummary.children].findIndex(child => child == li)
+         this.#removeOrder(liIndex)
+         DOM.removeElement(li)
+      })
    }
 
    #createOrderLi(seller, clientName, orderPrice) {
@@ -52,10 +101,11 @@ export class OrderList {
          <span class="blue-colored-string">
             ${orderPrice.toFixed(2)} $
          </span>
+         <i class="trash-icon"></i>
          `
       liContainer.append(liContainerTitle)
-   
       ordersSummary.append(liContainer)
+      
       return liContainer
    }
 

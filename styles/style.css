@@ -241,6 +241,7 @@ abbr.listed-product {
   display: inline;
 }
 
+
 .trash-icon {
   position: absolute;
   width: 23px;
@@ -249,6 +250,7 @@ abbr.listed-product {
   left: 90%;
   transform: translateY(-50%);
   cursor: pointer;
+  background-image: url('/assets/trash-icon.svg');
 }
 
 .summary footer h3 {
@@ -338,8 +340,14 @@ abbr[title]:focus::after {
   max-width: 450px;
 }
 
+.orders-summary-list {
+  list-style: inside;
+}
+
 .orders-summary-list li > p {
   display: inline-block;
+  position: relative;
+  width: 92%;
   font-size: 1.2rem;
 }
 
