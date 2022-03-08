@@ -233,8 +233,8 @@ export class OrderList {
       const sortedListByLength = [...this.list].sort((a, b) => {
          const aLength = a.total.length
          const bLength = b.total.length
-         if(aLength > bLength) return 1
-         if(aLength < bLength) return -1
+         if(aLength < bLength) return 1
+         if(aLength > bLength) return -1
    
          return 0
       })      
@@ -311,8 +311,8 @@ export class OrderList {
 
       // Sorting unified array
       this.unified.sort((a, b) => {
-         if(a.key > b.key) return 1
-         if(a.key < b.key) return -1
+         if(a.key < b.key) return 1
+         if(a.key > b.key) return -1
    
          return 0
       })      

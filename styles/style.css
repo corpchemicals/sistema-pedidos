@@ -247,7 +247,7 @@ abbr.listed-product {
   width: 23px;
   aspect-ratio: 1 / 1;
   top: 50%;
-  left: 100%;
+  left: 90%;
   transform: translateY(-50%);
   cursor: pointer;
   background-image: url('../assets/trash-icon.svg');
