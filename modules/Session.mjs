@@ -215,7 +215,9 @@ export class Session {
    #getCategoryByKeyName(keyName) {
       const splittedKeyName = keyName.split("")
       const isORSeries = keyName.startsWith("or") && !isNaN(splittedKeyName[2])
+      const isPromocionSeries = keyName.startsWith("p")
       if(isORSeries) return `or${splittedKeyName[2]}00`
+      if(isPromocionSeries) return `promocion`
 
       let category = ''
       for(const char of splittedKeyName) {
