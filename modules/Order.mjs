@@ -9,6 +9,7 @@ export class Order {
          clientPhone: "",
          clientID: "",
          clientAddress: "",
+         summaryNote: ""
       }
       this.price = 0
       this.#init()

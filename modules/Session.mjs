@@ -277,12 +277,12 @@ export class Session {
             clientPhoneOptional: DOM.get("#optional-client-phone").value,
             clientID: DOM.get("#client-identification").value,
             clientAddress: DOM.get("#client-address").value,
+            summaryNote: DOM.get("#order-summary-note").value
          }
 
          orderData.clientPhone &&= `${DOM.get("#phone-area-code").value}-${orderData.clientPhone}`
          orderData.clientPhoneOptional &&= `${DOM.get("#optional-phone-area-code").value}-${orderData.clientPhoneOptional}`
          orderData.clientID    &&= `${DOM.get("#identification-type").value}-${orderData.clientID}`
-   
          
          if(this.order.total.length == 0) return;
          Swal.fire({
