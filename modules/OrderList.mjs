@@ -118,10 +118,10 @@ export class OrderList {
       const hidedUl = DOM.create("ul")
       hidedUl.classList.add("hided-ul")
       for(const product of products) {
-         const { amount, keyName } = product
+         const { amount, keyName, isPacked } = product
       
          const li = DOM.create("li")
-         li.innerText = `${keyName.toUpperCase()}: ${amount} unds.`
+         li.innerText = `${keyName.toUpperCase()}: ${amount} ${isPacked ? 'pq' : 'unds'}.`
          hidedUl.append(li)
       }
 
@@ -217,12 +217,12 @@ export class OrderList {
       const ol = document.createElement("ol")
       const products = order.total
       for(const product of products) {
-         const { name, amount, uPrice, keyName} = product
+         const { name, amount, uPrice, keyName, isPacked } = product
          const shortedName = name.substring(0, 28) + "..."
          const productPrice = amount * uPrice
 
          const li = DOM.create("li")
-         li.innerHTML = `<span class="bold">${keyName.toUpperCase()}</span> | ${shortedName}: ${amount} unds. = <span class="bold">${productPrice.toFixed(2)} $</span>`
+         li.innerHTML = `<span class="bold">${keyName.toUpperCase()}</span> | ${shortedName}: ${amount} ${isPacked ? 'pq' : 'unds'}. = <span class="bold">${productPrice.toFixed(2)} $</span>`
          ol.append(li)
       }
       return ol
@@ -276,9 +276,9 @@ export class OrderList {
       ol.appendChild(h2)
 
       group.forEach(product => {
-         const { amount, keyName } = product
+         const { amount, keyName, isPacked } = product
          const li = DOM.create("li")
-         li.innerHTML = `<span class="bold">${keyName.toUpperCase()}</span>: ${amount}`
+         li.innerHTML = `<span class="bold">${keyName.toUpperCase()} ${isPacked && 'Paquetes'}</span>: ${amount}`
          ol.appendChild(li)
       })
 
